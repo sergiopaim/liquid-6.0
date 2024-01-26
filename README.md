@@ -7,7 +7,7 @@ Liquid is a **multi-cloud** framework designed to **accelerate the development**
 When writing Liquid applications, you stop worrying about the technology and focus on your business - Liquid abstracts most of the boilerplate and let you just write domain code that looks great and gets the job done.
 
 # Forked from [Avanade's](https://github.com/ava-innersource/Liquid-Application-Framework-1.0-deprecated)
-This version is a continuation (and an evolution) of v1.0 of the [original (v1.0 deprecated) Liquid Framework of Avanade](https://github.com/ava-innersource/Liquid-Application-Framework-1.0-deprecated), which decided to make an architectural rupture in v2.0 onwards, requiring a total rewrite of applications written in v1.0.
+This version is a continuation (and an evolution) of v1.0 of the [original (now deprecated) Liquid Framework of Avanade](https://github.com/ava-innersource/Liquid-Application-Framework-1.0-deprecated), which decided to make an architectural rupture in v2.0 onwards, requiring a total rewrite of applications written in v1.0.
 
 This fork, which jumps directly to version v6.0, in addition to making it easier to migrate applications written in v1.0, also upgrades them from .NET Core v2.2 to .NET v6.0.
 
