@@ -1,0 +1,11 @@
+{
+  // Messages to send
+  "MESSAGE_MUST_NOT_BE_EMPTY": "'message' field must not be empty.",
+  "SUBJECT_MUST_NOT_BE_EMPTY": "'subject' field must not be empty.",
+  // Services
+  "USER_NOT_FOUND": "User not found.",
+  // LightEnums
+  "NOTIFICATIONTYPE_ACCOUNT": "Account",
+  "NOTIFICATIONTYPE_TASKS": "Tasks",
+  "NOTIFICATIONTYPE_MARKETING": "Marketing"
+}

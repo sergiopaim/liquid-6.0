@@ -1,0 +1,202 @@
+// Comments can be added using double slashes at the start of a line, ignoring whitespace.
+[
+  {
+    "id": "0fe1ddfa-a5fd-4749-9ec2-538134344986",
+    "name": "Maria dos Santos",
+    "webPushChannel": {
+      "notificationTypes": [ "tasks" ],
+      "endpoints": [
+        {
+          // Used to be removed as invalide in unit test `notiWebPushSend01`
+          "deviceId": "chrome-03",
+          "pushEndpoint": "https://fcm.googleapis.com/fcm/send/fGXwphiqfbI:APA91bGGkfLLlmuFRL3cTXqlxYSEY92R5OyZDmR6SDXDy4GqdTqulK8AIyFohHaEFVO3L2mOrpDJ1gIEe4wBUCxknFmHMIT2a0LshEZGmsZThsjtS2eo0Ak5h3GUjE6-6_3JWhLeQ6xe",
+          "pushP256DH": "BFfja20fy7WSRHh6ponJi6tIZbAfl8h0AKT6sfj3+Asxozd2ScoMHbj/uww+j4j3CkWsHw53MFliEqZ70lAjg5k=",
+          "pushAuth": "mcZnKBSZ7Vkb7G+zZqxpTg=="
+        },
+        {
+          // Used in unit test `notiDeleteWebSubscription01`
+          "deviceId": "chrome-04",
+          "pushEndpoint": "https://fcm.googleapis.com/fcm/send/fGXwphiqfbI:APA91bGGkfLLlmuFRL3cTXqlxYSEY92R5OyZDmR6SDXDy4GqdTqulK8AIyFohHaEFVO3L2mOrpDJ1gIEe4wBUCxknFmHMIT2a0LshEZGmsZThsjtS2eo0Ak5h3GUjE6-6_3JWhLeQ6xe",
+          "pushP256DH": "BFfja20fy7WSRHh6ponJi6tIZbAfl8h0AKT6sfj3+Asxozd2ScoMHbj/uww+j4j3CkWsHw53MFliEqZ70lAjg5k=",
+          "pushAuth": "mcZnKBSZ7Vkb7G+zZqxpTg=="
+        },
+        // Used as the default for sending notifications, and in unit test `notiWebPushSend01`
+        {
+          "deviceId": "edge-01",
+          "pushEndpoint": "https://bn3p.notify.windows.com/w/?token=BQYAAABgpynnBqQiWi5rs2Zw9iiamNSDl7iV%2bruPz6lc9zBw6mRT0JllQ04laygfp3ztlZ2dbks9aItvkpLPmIUO9dH%2buX%2blFYTShkXpTpDIa3rFyng1Wu6vpQFyCgUJcmQ8VXA2QtEkysmBxWw6WC30isniP3RY6iGWaNHcIF3M9TViGFUp%2bYOfsDGGrRu7ndkfVrniXFXIs6JDXvRvffOgnkavwopZDMfNUo%2fVgnpDot%2bV5p9FOeUxiJp8qKfVEAaI441VXaEYfeKpiiznZmCnPaLAOpgOAO6%2fXoRV60Us9L3sh9Q8%2fKC%2bkXoUdVFfB7WcFuW7Nu4JuAuf%2bE0DnCX6Zk8r",
+          "pushP256DH": "BKlk2aPVUVmFY+UhGnsCvltdqH6acg6q59ZXZZIaM5Aiv29NbmXVX1r+F3wsgzrXQ8w0Q5rCyJxi5Lmn/pcSAxs=",
+          "pushAuth": "49v1PyRC1KI3jRzwoH3G+A=="
+        },
+        {
+          // Used in unit test `notiDeleteWebSubscription02`
+          "deviceId": "mozilla-01",
+          "pushEndpoint": "https://updates.push.services.mozilla.com/wpush/v2/gAAAAABeXWvH0Ttzg-MMDHMhZU4kl1hu6SWexmD7ZyJIoGBZRj7uXquMBI8WMwxK9C-ea020rs4uU_T9yA82z7o0cKB23H-qhasRrhylhT2rKWkQ0ZFdLsARn-9soYii_9NX-dJaPd-NpfYDpuQTqy2awwHvXE-tN7M2QAdaQbvxpvlqpkBMLME",
+          "pushP256DH": "BKlk2aPVUVmFY+UhGnsCvltdqH6acg6q59ZXZZIaM5Aiv29NbmXVX1r+F3wsgzrXQ8w0Q5rCyJxi5Lmn/pcSAxs=",
+          "pushAuth": "49v1PyRC1KI3jRzwoH3G+A=="
+        }
+      ]
+    },
+    "emailChannel": {
+      "notificationTypes": [ "tasks" ],
+      "email": "mariasantos@members.com",
+      "isValid": false
+    },
+    "phoneChannel": {
+      "notificationTypes": [ "tasks" ]
+    }
+  },
+  {
+    "id": "d084740b-9593-4727-be8d-bb5f1f716921",
+    "name": "Maria dos Santos",
+    "webPushChannel": {
+      "notificationTypes": [ "tasks" ],
+      "endpoints": [
+        {
+          // Used to be removed as invalide in unit test `notiWebPushSend01`
+          "deviceId": "chrome-03",
+          "pushEndpoint": "https://fcm.googleapis.com/fcm/send/fGXwphiqfbI:APA91bGGkfLLlmuFRL3cTXqlxYSEY92R5OyZDmR6SDXDy4GqdTqulK8AIyFohHaEFVO3L2mOrpDJ1gIEe4wBUCxknFmHMIT2a0LshEZGmsZThsjtS2eo0Ak5h3GUjE6-6_3JWhLeQ6xe",
+          "pushP256DH": "BFfja20fy7WSRHh6ponJi6tIZbAfl8h0AKT6sfj3+Asxozd2ScoMHbj/uww+j4j3CkWsHw53MFliEqZ70lAjg5k=",
+          "pushAuth": "mcZnKBSZ7Vkb7G+zZqxpTg=="
+        },
+        {
+          // Used in unit test `notiDeleteWebSubscription01`
+          "deviceId": "chrome-04",
+          "pushEndpoint": "https://fcm.googleapis.com/fcm/send/fGXwphiqfbI:APA91bGGkfLLlmuFRL3cTXqlxYSEY92R5OyZDmR6SDXDy4GqdTqulK8AIyFohHaEFVO3L2mOrpDJ1gIEe4wBUCxknFmHMIT2a0LshEZGmsZThsjtS2eo0Ak5h3GUjE6-6_3JWhLeQ6xe",
+          "pushP256DH": "BFfja20fy7WSRHh6ponJi6tIZbAfl8h0AKT6sfj3+Asxozd2ScoMHbj/uww+j4j3CkWsHw53MFliEqZ70lAjg5k=",
+          "pushAuth": "mcZnKBSZ7Vkb7G+zZqxpTg=="
+        },
+        // Used as the default for sending notifications, and in unit test `notiWebPushSend01`
+        {
+          "deviceId": "edge-01",
+          "pushEndpoint": "https://bn3p.notify.windows.com/w/?token=BQYAAABgpynnBqQiWi5rs2Zw9iiamNSDl7iV%2bruPz6lc9zBw6mRT0JllQ04laygfp3ztlZ2dbks9aItvkpLPmIUO9dH%2buX%2blFYTShkXpTpDIa3rFyng1Wu6vpQFyCgUJcmQ8VXA2QtEkysmBxWw6WC30isniP3RY6iGWaNHcIF3M9TViGFUp%2bYOfsDGGrRu7ndkfVrniXFXIs6JDXvRvffOgnkavwopZDMfNUo%2fVgnpDot%2bV5p9FOeUxiJp8qKfVEAaI441VXaEYfeKpiiznZmCnPaLAOpgOAO6%2fXoRV60Us9L3sh9Q8%2fKC%2bkXoUdVFfB7WcFuW7Nu4JuAuf%2bE0DnCX6Zk8r",
+          "pushP256DH": "BKlk2aPVUVmFY+UhGnsCvltdqH6acg6q59ZXZZIaM5Aiv29NbmXVX1r+F3wsgzrXQ8w0Q5rCyJxi5Lmn/pcSAxs=",
+          "pushAuth": "49v1PyRC1KI3jRzwoH3G+A=="
+        },
+        {
+          // Used in unit test `notiDeleteWebSubscription02`
+          "deviceId": "mozilla-01",
+          "pushEndpoint": "https://updates.push.services.mozilla.com/wpush/v2/gAAAAABeXWvH0Ttzg-MMDHMhZU4kl1hu6SWexmD7ZyJIoGBZRj7uXquMBI8WMwxK9C-ea020rs4uU_T9yA82z7o0cKB23H-qhasRrhylhT2rKWkQ0ZFdLsARn-9soYii_9NX-dJaPd-NpfYDpuQTqy2awwHvXE-tN7M2QAdaQbvxpvlqpkBMLME",
+          "pushP256DH": "BKlk2aPVUVmFY+UhGnsCvltdqH6acg6q59ZXZZIaM5Aiv29NbmXVX1r+F3wsgzrXQ8w0Q5rCyJxi5Lmn/pcSAxs=",
+          "pushAuth": "49v1PyRC1KI3jRzwoH3G+A=="
+        }
+      ]
+    },
+    "emailChannel": {
+      "notificationTypes": [ "tasks" ],
+      "email": "mariasantos@members.com",
+      "isValid": false
+    },
+    "phoneChannel": {
+      "notificationTypes": [ "tasks" ]
+    }
+  },
+  {
+    "id": "dd3f3d4b-d693-4709-bb27-631b937cc026",
+    "name": "Maria dos Santos Segunda",
+    "webPushChannel": {
+      "notificationTypes": [ "tasks" ],
+      "endpoints": [
+        {
+          // Used as the default for sending notifications, and in unit test `notiPostWebSubscriptionChannelAlreadySubscribed`
+          "deviceId": "chrome-03",
+          "pushEndpoint": "https://fcm.googleapis.com/fcm/send/fGXwphiqfbI:APA91bGGkfLLlmuFRL3cTXqlxYSEY92R5OyZDmR6SDXDy4GqdTqulK8AIyFohHaEFVO3L2mOrpDJ1gIEe4wBUCxknFmHMIT2a0LshEZGmsZThsjtS2eo0Ak5h3GUjE6-6_3JWhLeQ6xe",
+          "pushP256DH": "BFfja20fy7WSRHh6ponJi6tIZbAfl8h0AKT6sfj3+Asxozd2ScoMHbj/uww+j4j3CkWsHw53MFliEqZ70lAjg5k=",
+          "pushAuth": "mcZnKBSZ7Vkb7G+zZqxpTg=="
+        },
+        {
+          // Used in unit test `notiDeleteWebSubscription01`
+          "deviceId": "edge-01",
+          "pushEndpoint": "https://bn3p.notify.windows.com/w/?token=BQYAAABgpynnBqQiWi5rs2Zw9iiamNSDl7iV%2bruPz6lc9zBw6mRT0JllQ04laygfp3ztlZ2dbks9aItvkpLPmIUO9dH%2buX%2blFYTShkXpTpDIa3rFyng1Wu6vpQFyCgUJcmQ8VXA2QtEkysmBxWw6WC30isniP3RY6iGWaNHcIF3M9TViGFUp%2bYOfsDGGrRu7ndkfVrniXFXIs6JDXvRvffOgnkavwopZDMfNUo%2fVgnpDot%2bV5p9FOeUxiJp8qKfVEAaI441VXaEYfeKpiiznZmCnPaLAOpgOAO6%2fXoRV60Us9L3sh9Q8%2fKC%2bkXoUdVFfB7WcFuW7Nu4JuAuf%2bE0DnCX6Zk8r",
+          "pushP256DH": "BKlk2aPVUVmFY+UhGnsCvltdqH6acg6q59ZXZZIaM5Aiv29NbmXVX1r+F3wsgzrXQ8w0Q5rCyJxi5Lmn/pcSAxs=",
+          "pushAuth": "49v1PyRC1KI3jRzwoH3G+A=="
+        },
+        {
+          // Used in unit test `notiDeleteWebSubscription02`
+          "deviceId": "mozilla-01",
+          "pushEndpoint": "https://updates.push.services.mozilla.com/wpush/v2/gAAAAABeXWvH0Ttzg-MMDHMhZU4kl1hu6SWexmD7ZyJIoGBZRj7uXquMBI8WMwxK9C-ea020rs4uU_T9yA82z7o0cKB23H-qhasRrhylhT2rKWkQ0ZFdLsARn-9soYii_9NX-dJaPd-NpfYDpuQTqy2awwHvXE-tN7M2QAdaQbvxpvlqpkBMLME",
+          "pushP256DH": "BKlk2aPVUVmFY+UhGnsCvltdqH6acg6q59ZXZZIaM5Aiv29NbmXVX1r+F3wsgzrXQ8w0Q5rCyJxi5Lmn/pcSAxs=",
+          "pushAuth": "49v1PyRC1KI3jRzwoH3G+A=="
+        }
+      ]
+    },
+    "emailChannel": {
+      "notificationTypes": [ "tasks" ],
+      "email": "segunda@members.com",
+      "isValid": false
+    },
+    "phoneChannel": {
+      "notificationTypes": [ "tasks" ]
+    }
+  },
+  {
+    "id": "6c5f063d-22f7-4635-9849-02ea54d9b9cc",
+    "name": "João Ninguém",
+    "webPushChannel": {
+      "notificationTypes": [ "tasks" ]
+    },
+    "emailChannel": {
+      "notificationTypes": [ "tasks" ],
+      "email": "joao-ninguem@members.com",
+      "isValid": false
+    },
+    "phoneChannel": {
+      "notificationTypes": [ "tasks" ]
+    }
+  },
+  {
+    "id": "3aa9455a-ec1c-4178-8bfa-97d8891f1856",
+    "name": "Jessica Beatriz Silva",
+    "language": "en",
+    "webPushChannel": {
+      "notificationTypes": [ "tasks" ],
+      "endpoints": []
+    },
+    "emailChannel": {
+      "notificationTypes": [ "tasks" ],
+      "email": "jessicasilva@members.com",
+      "isValid": false
+    },
+    "phoneChannel": {
+      "notificationTypes": [ "tasks" ],
+      "phone": "+55 (99) 99999-1111",
+      "isValid": false
+    }
+  },
+  {
+    "id": "5e179f25-8d4d-43e9-b358-5320e740329f",
+    "name": "Roberta do Povo",
+    "webPushChannel": {
+      "notificationTypes": [ "tasks" ],
+      "endpoints": []
+    },
+    "emailChannel": {
+      "notificationTypes": [ "tasks" ],
+      "email": "robertadopovo@members.com",
+      "isValid": false
+    },
+    "phoneChannel": {
+      "notificationTypes": [ "tasks" ]
+    }
+  },
+  // Used in deleteMe
+  {
+    "id": "bf2dddfa-aa21-4b67-99ba-8125d4bfa109",
+    "name": "Para deletar",
+    "language": "pt",
+    "timeZone": "America/Sao_Paulo",
+    "webPushChannel": {
+      "notificationTypes": [ "tasks" ],
+      "endpoints": []
+    },
+    "emailChannel": {
+      "notificationTypes": [ "tasks" ],
+      "email": "jtodelete@members.com",
+      "emailIsValid": true
+    },
+    "phoneChannel": {
+      "notificationTypes": [ "tasks" ],
+      "phone": "+55 (99) 99698-8957",
+      "phoneIsValid": true
+    }
+  }
+]

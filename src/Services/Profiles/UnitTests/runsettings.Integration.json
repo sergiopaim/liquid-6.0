@@ -1,0 +1,8 @@
+{
+  "ApiWrapper": {
+    "PROFILES": {
+      "Host": "https://dev-api.your-domain.com/int/user/profiles",
+      "Port": -1
+    }
+  }
+}

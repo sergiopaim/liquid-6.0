@@ -1,0 +1,51 @@
+{
+  "notiPostWebSubscription01": {
+    "input": {
+      "userId": "dd3f3d4b-d693-4709-bb27-631b937cc026",
+      "payload": {
+        "deviceId": "chrome-01",
+        "pushEndpoint": "https://fcm.googleapis.com/fcm/send/fGXwphiqfbI:APA91bGGkfLLlmuFRL3cTXqlxYSEY92R5OyZDmR6SDXDy4GqdTqulK8AIyFohHaEFVO3L2mOrpDJ1gIEe4wBUCxknFmHMIT2a0LshEZGmsZThsjtS2eo0Ak5h3GUjE6-6_3JWhLeQ6xe",
+        "pushP256DH": "BFfja20fy7WSRHh6ponJi6tIZbAfl8h0AKT6sfj3+Asxozd2ScoMHbj/uww+j4j3CkWsHw53MFliEqZ70lAjg5k=",
+        "pushAuth": "mcZnKBSZ7Vkb7G+zZqxpTg=="
+      }
+    },
+    "output": {
+      "payload": {
+        "deviceId": "chrome-01",
+        "pushEndpoint": "https://fcm.googleapis.com/fcm/send/fGXwphiqfbI:APA91bGGkfLLlmuFRL3cTXqlxYSEY92R5OyZDmR6SDXDy4GqdTqulK8AIyFohHaEFVO3L2mOrpDJ1gIEe4wBUCxknFmHMIT2a0LshEZGmsZThsjtS2eo0Ak5h3GUjE6-6_3JWhLeQ6xe",
+        "pushP256DH": "BFfja20fy7WSRHh6ponJi6tIZbAfl8h0AKT6sfj3+Asxozd2ScoMHbj/uww+j4j3CkWsHw53MFliEqZ70lAjg5k=",
+        "pushAuth": "mcZnKBSZ7Vkb7G+zZqxpTg=="
+      }
+    }
+  },
+  "notiPostWebSubscription02": {
+    "input": {
+      "userId": "dd3f3d4b-d693-4709-bb27-631b937cc026",
+      "payload": {
+        "deviceId": "chrome-02",
+        "pushEndpoint": "https://bn3p.notify.windows.com/w/?token=BQYAAABZzxHTAr8y5fyFb70Tr2kz95k0gNpY7QU5ghhWs3dHrcbXpiNoLfXfwtoESIqe46YjRJztcjVk0cSRd39Kqp98d5G9Yel%2bk61lP4BA6QzdB%2fV7bjKPCwGstC9E4yCKDy0MJuaRI4QV2dIMhC2WHlci90qN%2fpouJMNkPSXduki9a%2fO1NFdOCgBLbEYnuZ%2b0QYm0iMtL7F2a4zoOMtiaGh580vjEVPOsMfvU3rinTXqsBGIhNa8QN2Ku3IKoziAQWFWqcYhGums0jJ4RUhGGAMNtCDnwdmf70VJVVSl9FcxxeGsgPgeiXgL3FTi1hDqJBes%2bGpvj4BlkB2VuMR5e1a7l",
+        "pushP256DH": "BFfja20fy7WSRHh6ponJi6tIZbAfl8h0AKT6sfj3+Asxozd2ScoMHbj/uww+j4j3CkWsHw53MFliEqZ70lAjg5k=",
+        "pushAuth": "mcZnKBSZ7Vkb7G+zZqxpTg=="
+      }
+    },
+    "output": {
+      "payload": {
+        "deviceId": "chrome-02",
+        "pushEndpoint": "https://bn3p.notify.windows.com/w/?token=BQYAAABZzxHTAr8y5fyFb70Tr2kz95k0gNpY7QU5ghhWs3dHrcbXpiNoLfXfwtoESIqe46YjRJztcjVk0cSRd39Kqp98d5G9Yel%2bk61lP4BA6QzdB%2fV7bjKPCwGstC9E4yCKDy0MJuaRI4QV2dIMhC2WHlci90qN%2fpouJMNkPSXduki9a%2fO1NFdOCgBLbEYnuZ%2b0QYm0iMtL7F2a4zoOMtiaGh580vjEVPOsMfvU3rinTXqsBGIhNa8QN2Ku3IKoziAQWFWqcYhGums0jJ4RUhGGAMNtCDnwdmf70VJVVSl9FcxxeGsgPgeiXgL3FTi1hDqJBes%2bGpvj4BlkB2VuMR5e1a7l",
+        "pushP256DH": "BFfja20fy7WSRHh6ponJi6tIZbAfl8h0AKT6sfj3+Asxozd2ScoMHbj/uww+j4j3CkWsHw53MFliEqZ70lAjg5k=",
+        "pushAuth": "mcZnKBSZ7Vkb7G+zZqxpTg=="
+      }
+    }
+  },
+  "notiPostWebSubscriptionChannelAlreadySubscribed": {
+    "input": {
+      "userId": "dd3f3d4b-d693-4709-bb27-631b937cc026",
+      "payload": {
+        "deviceId": "mozilla-01",
+        "pushEndpoint": "https://updates.push.services.mozilla.com/wpush/v2/gAAAAABeXWvH0Ttzg-MMDHMhZU4kl1hu6SWexmD7ZyJIoGBZRj7uXquMBI8WMwxK9C-ea020rs4uU_T9yA82z7o0cKB23H-qhasRrhylhT2rKWkQ0ZFdLsARn-9soYii_9NX-dJaPd-NpfYDpuQTqy2awwHvXE-tN7M2QAdaQbvxpvlqpkBMLME",
+        "pushP256DH": "BKlk2aPVUVmFY+UhGnsCvltdqH6acg6q59ZXZZIaM5Aiv29NbmXVX1r+F3wsgzrXQ8w0Q5rCyJxi5Lmn/pcSAxs=",
+        "pushAuth": "49v1PyRC1KI3jRzwoH3G+A=="
+      }
+    }
+  }
+}

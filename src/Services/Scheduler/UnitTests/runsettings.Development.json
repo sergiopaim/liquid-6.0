@@ -1,0 +1,8 @@
+{
+  "ApiWrapper": {
+    "REPORTS": {
+      "Host": "https://localhost",
+      "Port": 5003
+    }
+  }
+}

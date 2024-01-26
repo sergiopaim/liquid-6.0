@@ -1,0 +1,32 @@
+{
+  "profGetIdByEmail01": {
+    "input": {
+      "channel": "jsilva@members.com"
+    },
+    "output": {
+      "payload": {
+        "id": "6c5f063d-22f7-4635-9849-02ea54d9b9cc"
+      }
+    }
+  },
+  "profGetIdByPhone01": {
+    "input": {
+      "channel": "+55 (99) 99999-8956"
+    },
+    "output": {
+      "payload": {
+        "id": "6c5f063d-22f7-4635-9849-02ea54d9b9cc"
+      }
+    }
+  },
+  "profGetIdByEmailNoContent": {
+    "input": {
+      "channel": "email@notfound.com"
+    }
+  },
+  "profGetIdByEmailAAD": {
+    "input": {
+      "channel": "admin.backoffice@your-dev-domain.onmicrosoft.com"
+    }
+  }
+}

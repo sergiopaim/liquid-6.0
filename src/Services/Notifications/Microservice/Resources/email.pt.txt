@@ -1,0 +1,15 @@
+
+Olá{userGreeting}!
+
+{message}
+
+
+
+DEV Team
+your-domain.com
+
+-------------------------------------------------------------------------------
+Essa é uma mensagem automatizada destinada exclusivamente a {userName}.
+
+Caso você não seja essa pessoa, favor desconsiderá-la.
+Não é necessário/possível respondê-la.

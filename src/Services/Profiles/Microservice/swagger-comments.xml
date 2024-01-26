@@ -1,0 +1,647 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microservice</name>
+    </assembly>
+    <members>
+        <member name="T:Microservice.Controllers.AuthorizationController">
+            <summary>
+            API with its endpoints and exchangeable datatypes
+            </summary>
+        </member>
+        <member name="M:Microservice.Controllers.AuthorizationController.RefreshJWTAsync(System.String)">
+            <summary>
+            Gets a new JWT based on a previously valid one
+            </summary>
+            <returns>A newly created valid JWT</returns>
+        </member>
+        <member name="M:Microservice.Controllers.AuthorizationController.AuthenticateByIdToken(System.String)">
+            <summary>
+            Authenticates with provided IdToken
+            </summary>
+            <param name="idToken">The id_token to authenticate with</param>
+            <returns>A newly created valid JWT</returns>
+        </member>
+        <member name="M:Microservice.Controllers.AuthorizationController.AuthenticateByOTP(System.String,System.String,System.String)">
+            <summary>
+            Authenticates with provided OTP
+            </summary>
+            <param name="accountId">The id for the account being authenticated</param>
+            <param name="otp">The OTP to be validated</param>
+            <param name="channelType">Channel to send the invitation link (see channelTypes)</param>
+            <returns>A newly created valid JWT</returns>
+        </member>
+        <member name="M:Microservice.Controllers.AuthorizationController.AuthenticateBySecret(System.String,System.String)">
+            <summary>
+            Authenticates a ServiceAccount (for API integration) with provided secret
+            </summary>
+            <param name="serviceAccountId">The id for the ServiceAccount being authenticated</param>
+            <param name="secret">The secret string associated to the ServiceAccount</param>
+            <returns>A newly created valid JWT</returns>
+        </member>
+        <member name="M:Microservice.Controllers.AuthorizationController.RequestNewOTP(System.String)">
+            <summary>
+            Generates a new OTP for the provided account
+            </summary>
+            <param name="accountId"></param>
+            <returns>A newly created OTP associated to the account</returns>
+        </member>
+        <member name="M:Microservice.Controllers.AuthorizationController.RequestLogin(System.String,System.String)">
+            <summary>
+            Request login via other signed in application sessions of the user
+            </summary>
+            <param name="accountId">User account id</param>
+            <param name="connectionId">ReactiveHub anonymous connection id (of the requesting session)</param>
+            <returns>Void</returns>
+        </member>
+        <member name="M:Microservice.Controllers.AuthorizationController.AllowLogin(System.String,System.String)">
+            <summary>
+            Request login via other signed in application sessions of the user
+            </summary>
+            <param name="accountId">User account id </param>
+            <param name="connectionId">ReactiveHub anonymous connection id (of the requesting session)</param>
+            <returns>Void</returns>
+        </member>
+        <member name="M:Microservice.Controllers.AuthorizationController.SendAuthLink(System.String,System.String)">
+            <summary>
+            Send authentication link with OTP through the channel selected
+            </summary>
+            <param name="accountId">User account id </param>
+            <param name="channelType">Channel to send the invitation link (see channelTypes)</param>
+            <returns>Void</returns>
+        </member>
+        <member name="T:Microservice.Controllers.ProfilesController">
+            <summary>
+            API with its endpoints and exchangeable datatypes
+            </summary>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.MigrateAsync">
+            <summary>
+            Migrate
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.SyncFromAADAsync">
+            <summary>
+            Sync users from AAD
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.GetById(System.String,System.Boolean)">
+            <summary>
+            Gets a user profile by id
+            </summary>
+            <param name="id">User id</param>
+            <param name="onlyIM">Indication whether only IM (except AAD) users should be considered</param>
+            <returns>The user's profile</returns>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.GetAADUsersByEmailFilter(System.String,System.Collections.Generic.List{System.String},System.Boolean)">
+            <summary>
+            Gets directory (AAD) users filtered by many parameters
+            </summary>
+            <param name="tip">Tip to match the start of user names or emails</param>
+            <param name="emailFilter">list of email ending parts to filter users for (ex: @gmail.com)</param>
+            <param name="guestOnly">Indication whether only guest users should be returned (optional, false if not informed)</param>
+            <returns>A summary directory user list</returns>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.InviteUserToAAD(System.String,System.String,System.String,System.String)">
+            <summary>
+            Invite user as directory (AAD) guest users
+            </summary>
+            <param name="name">The name of the user</param>
+            <param name="email">The user email address to invite the user and to be used as an alternate key</param>
+            <param name="role">The initial role the user is going to have</param>
+            <param name="redirectUrl">The url to redirect the user after redeem process</param>
+            <returns>A user invitation data</returns>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.UpdateAADUserRoles(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            Updates the a directory user (AAD) roles
+            </summary>
+            <param name="id">User id</param>
+            <param name="roles">The list of roles the user has</param>
+            <returns>A user profile</returns>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.GetPendingChangesById(System.String)">
+            <summary>
+            Gets a user profile with pending (not confirmed and/or approved) changes, by id
+            </summary>
+            <param name="id">User id</param>
+            <returns>The user's profile with pending (not confirmed and/or approved) changes</returns>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.UpdateById(System.String,Microservice.ViewModels.EditProfileVM)">
+            <summary>
+            Edits the user profile by Id
+            </summary>
+            <param name="id">User id</param>
+            <param name="profile">An existing account record with its editable properties to be saved</param>
+            <returns>The stored profile record after edition</returns>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.RevertChannelByIdAsync(System.String)">
+            <summary>
+            Reverts a channel update for a user profile by Id
+            </summary>
+            <param name="otpToken">Revertion OTP sent with the reversion link email</param>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.CreateOrUpdateWithOTP(Liquid.Platform.ProfileVM)">
+            <summary>
+            Create or update a local user with new OTP
+            </summary>
+            <param name="newProfile">New profile to create or update a user for</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.CreateServiceAccount(System.String,System.String,System.String)">
+            <summary>
+            Create service account user 
+            </summary>
+            <param name="userId">The id of the service account user to create</param>
+            <param name="name">The name of the service account</param>
+            <param name="email">The (admin) email of the service account</param>
+            <returns>The service account user credentials</returns>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.UpdateServiceAccount(System.String,System.String,System.String)">
+            <summary>
+            Updates an existing service account user secret
+            </summary>
+            <param name="userId">The id of the service account</param>
+            <param name="name">The name of the service account</param>
+            <param name="email">The (admin) email of the service account</param>
+            <returns>The service account user new credentials</returns>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.GenerateServiceAccountSecret(System.String)">
+            <summary>
+            Generates a new service account user secret
+            </summary>
+            <param name="userId">The id of the service account user to create</param>
+            <returns>The service account user new credentials</returns>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.DeleteServiceAccount(System.String)">
+            <summary>
+            Deletes an existing service account
+            </summary>
+            <param name="userId">The id of the service account</param>
+            <returns>The deleted service account</returns>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.GetByIds(System.Collections.Generic.List{System.String})">
+            <summary>
+            Gets basic user profiles by a list of ids
+            </summary>
+            <param name="ids">The list of ids</param>
+            <returns>The user basic profiles</returns>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.GetByRole(System.String,System.Boolean)">
+            <summary>
+            Gets user profiles by role
+            </summary>
+            <param name="role">The role</param>
+            <param name="all">Indication whether all or only active profiles should be returned. Default false</param>
+            <returns>The user profiles</returns>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.GetByRoles(System.Collections.Generic.List{System.String},System.Boolean)">
+            <summary>
+            Gets user profiles by any of the informed roles
+            </summary>
+            <param name="roles">List of roles</param>
+            <param name="all">Indication whether all or only active profiles should be returned. Default false</param>
+            <returns>The user profiles</returns>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.GetByEmail(System.String)">
+            <summary>
+            Gets a user profile by email address
+            </summary>
+            <param name="email">The E-mail address</param>
+            <returns>The user's profile</returns>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.GetIdByChannel(System.String)">
+            <summary>
+            Gets the user basic profile by contact channels 
+            </summary>
+            <param name="channel">The channel id (phone number or email address)</param>
+            <returns>The user's basic profile</returns>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.DeleteMe(System.String)">
+            <summary>
+            Deletes the profile of the authenticated member user
+            </summary>
+            <param name="feedback">The feedback on why the member user is opting out</param>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.GetMe">
+            <summary>
+            Gets the profile of the authenticated user
+            </summary>
+            <returns>The user's profile</returns>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.GetMeWithPendingChanges">
+            <summary>
+            Gets the profile of the authenticated user with pending (not confirmed and/or approved) changes
+            </summary>
+            <returns>The user's profile</returns>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.UpdateMeAsync(Microservice.ViewModels.EditProfileVM)">
+            <summary>
+            Edits the profile of the authenticated user
+            </summary>
+            <param name="profile">An existing account record with its editable properties to be saved</param>
+            <returns>The stored profile record after edition</returns>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.RequestMyChannelsValidationAsync">
+            <summary>
+            Requests the validation of channels of the authenticated user
+            </summary>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.ValidateMyChannelAsync(System.String,System.String)">
+            <summary>
+            Validates the a channel of the authenticated user
+            </summary>
+            <param name="channelType">Channel to validate (see channelTypes)</param>
+            <param name="validationOTP">Channel validation OTP</param>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.ResendMyChannelValidationLinkAsync(System.String)">
+            <summary>
+            Resends the channel validation link of the authenticated user
+            </summary>
+            <param name="channelType">Channel to resend the validation link (see channelTypes)</param>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.GetMyAccountAsync">
+            <summary>
+            Gets the current account information of the authenticated user
+            </summary>
+            <returns>The account record</returns>
+        </member>
+        <member name="M:Microservice.Controllers.ProfilesController.GetChannelTypes">
+            <summary>
+            Gets list of channels to send links and codes to the user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Microservice.Models.Account">
+            <summary>
+            Model of an Account
+            </summary>
+        </member>
+        <member name="T:Microservice.Models.WebAuthN">
+            <summary>
+            WebAuthN credential of the user's account
+            </summary>
+        </member>
+        <member name="P:Microservice.Models.WebAuthN.DeviceId">
+            <summary>
+            Device unique identifyer
+            </summary>
+        </member>
+        <member name="P:Microservice.Models.WebAuthN.CredentialId">
+            <summary>
+            Id of the credential
+            </summary>
+        </member>
+        <member name="P:Microservice.Models.WebAuthN.PublicKey">
+            <summary>
+            PK used by the credential
+            </summary>
+        </member>
+        <member name="P:Microservice.Models.WebAuthN.Algorithm">
+            <summary>
+            Algorithm used by the credential
+            </summary>
+        </member>
+        <member name="P:Microservice.Models.WebAuthN.Counter">
+            <summary>
+            Protect against replay attacks
+            </summary>
+        </member>
+        <member name="T:Microservice.Models.ProfileWithPendingChangesVM">
+            <summary>
+            A user's profile with pending (not confirmed and/or approved) changes in its attributes
+            </summary>
+        </member>
+        <member name="P:Microservice.Models.ProfileWithPendingChangesVM.Id">
+            <summary>
+            User's id
+            </summary>
+        </member>
+        <member name="P:Microservice.Models.ProfileWithPendingChangesVM.Email">
+            <summary>
+            The user's email
+            </summary>
+        </member>
+        <member name="P:Microservice.Models.ProfileWithPendingChangesVM.EmailIsValid">
+            <summary>
+            Indicates whether the email has been validated
+            </summary>
+        </member>
+        <member name="P:Microservice.Models.ProfileWithPendingChangesVM.Phone">
+            <summary>
+            The user's phone number
+            </summary>
+        </member>
+        <member name="P:Microservice.Models.ProfileWithPendingChangesVM.PhoneIsValid">
+            <summary>
+            Indicates whether the phone number has been validated
+            </summary>
+        </member>
+        <member name="T:Microservice.ViewModels.TokenVM">
+            <summary>
+            The view model with the new JWT created
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.TokenVM.IssuedTo">
+            <summary>
+            The account id to which the JWT was issued
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.TokenVM.Token">
+            <summary>
+            The JWT
+            </summary>
+        </member>
+        <member name="T:Microservice.ViewModels.WebAuthNCredentialsVM">
+            <summary>
+            WebAuthN credential
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNCredentialsVM.Id">
+            <summary>
+            Credential's id
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNCredentialsVM.Type">
+            <summary>
+            Type of credential
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNCredentialsVM.Transports">
+            <summary>
+            List of transports
+            </summary>
+        </member>
+        <member name="T:Microservice.ViewModels.WebAuthNCredentialRequestVM">
+            <summary>
+            Payload of a WebAuthN credential request
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNCredentialRequestVM.Challenge">
+            <summary>
+            Authentication challenge
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNCredentialRequestVM.RpId">
+            <summary>
+            Requester domain
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNCredentialRequestVM.AllowCredentials">
+            <summary>
+            List off allowed credentials 
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNCredentialRequestVM.UserVerification">
+            <summary>
+            User verification token
+            </summary>
+        </member>
+        <member name="T:Microservice.ViewModels.ClientDataJSON">
+            <summary>
+            Client data payload
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.ClientDataJSON.Challenge">
+            <summary>
+            Challenge used during authentication
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.ClientDataJSON.Origin">
+            <summary>
+            Request origin
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.ClientDataJSON.Type">
+            <summary>
+            Authentication type
+            </summary>
+        </member>
+        <member name="T:Microservice.ViewModels.WebAuthNAttestationVM">
+            <summary>
+            Attestation of WebauthN authentication process
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNAttestationVM.AttestationObject">
+            <summary>
+            Attestation content
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNAttestationVM.ClientDataJSON">
+            <summary>
+            Client data
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNAttestationVM.Signature">
+            <summary>
+            Attestation signature
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNAttestationVM.AuthenticatorData">
+            <summary>
+            Attestation authenticator
+            </summary>
+        </member>
+        <member name="T:Microservice.ViewModels.WebAuthNRequestVM">
+            <summary>
+            Request of a WebAuthN credential
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNRequestVM.CredentialId">
+            <summary>
+            Credential's id
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNRequestVM.Type">
+            <summary>
+            Type of authentication
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNRequestVM.Response">
+            <summary>
+            Attestation response
+            </summary>
+        </member>
+        <member name="T:Microservice.ViewModels.WebAuthNCredentialCreationVM">
+            <summary>
+            The view model with the information so the device can register with the WebAuthN authenticator
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNCredentialCreationVM.Challenge">
+            <summary>
+            The challenge that must be used to register with the WebAuthN authenticator, base 64 encoded
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNCredentialCreationVM.RP">
+            <summary>
+            Relying Party
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNCredentialCreationVM.User">
+            <summary>
+            The user associated with the request
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNCredentialCreationVM.PubKeyCredParams">
+            <summary>
+            Public-key credentials
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNCredentialCreationVM.ExcludeCredentials">
+            <summary>
+            Credentials to Exclude
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNCredentialCreationVM.Attestation">
+            <summary>
+            Attestation token
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNCredentialCreationVM.UserVerification">
+            <summary>
+            User verification token
+            </summary>
+        </member>
+        <member name="T:Microservice.ViewModels.WebAuthNPublicKeyParamsVM">
+            <summary>
+            Public-key parameters used in WebAuthN authentication process
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNPublicKeyParamsVM.Type">
+            <summary>
+            PK type
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNPublicKeyParamsVM.Alg">
+            <summary>
+            PK algorithm
+            </summary>
+        </member>
+        <member name="T:Microservice.ViewModels.WebAuthNRelyingPartyVM">
+            <summary>
+            Relying party of WebAuthN
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNRelyingPartyVM.Id">
+            <summary>
+            Relying party id
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNRelyingPartyVM.Name">
+            <summary>
+            Relying party name
+            </summary>
+        </member>
+        <member name="T:Microservice.ViewModels.WebAuthNUserVM">
+            <summary>
+            The user information to use in WebauthN dialogs
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNUserVM.Id">
+            <summary>
+             User id
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNUserVM.Name">
+            <summary>
+             User name
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebAuthNUserVM.DisplayName">
+            <summary>
+             User name to display
+            </summary>
+        </member>
+        <member name="T:Microservice.ViewModels.AccountVM">
+            <summary>
+            An account record with all of its attributes
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.AccountVM.Id">
+            <summary>
+            Id of the user account
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.AccountVM.Roles">
+            <summary>
+            List of roles the user has from the account
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.AccountVM.Source">
+            <summary>
+            The source of user account
+            </summary>
+        </member>
+        <member name="M:Microservice.ViewModels.AccountVM.Validate">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:Microservice.ViewModels.ComparableProfileVM">
+            <summary>
+            A user's profile used for compare update changes
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.ComparableProfileVM.Id">
+            <summary>
+            User's id
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.ComparableProfileVM.Name">
+            <summary>
+            User´s name 
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.ComparableProfileVM.Language">
+            <summary>
+            Language selected by the user
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.ComparableProfileVM.TimeZone">
+            <summary>
+            Timezone selected by the user
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.ComparableProfileVM.Roles">
+            <summary>
+            User's roles from all accounts
+            </summary>
+        </member>
+        <member name="T:Microservice.ViewModels.EditProfileVM">
+            <summary>
+            A user's profile with its editable attributes
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.EditProfileVM.Name">
+            <summary>
+            User´s name 
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.EditProfileVM.Language">
+            <summary>
+            Language selected by the user
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.EditProfileVM.TimeZone">
+            <summary>
+            Timezone selected by the user
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.EditProfileVM.Email">
+            <summary>
+            The user's email address
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.EditProfileVM.Phone">
+            <summary>
+            The user's phone number
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.EditProfileVM.UIPreferences">
+            <summary>
+            Profile property containing arbitrary object for the use of apps to store user UI preferences
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microservice</name>
+    </assembly>
+    <members>
+        <member name="T:Microservice.Controllers.NotificationsController">
+            <summary>
+            API with its endpoints and exchangeable datatypes
+            </summary>
+        </member>
+        <member name="M:Microservice.Controllers.NotificationsController.Migrate">
+            <summary>
+            Migrate
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microservice.Controllers.NotificationsController.GetAllByUser(System.String)">
+            <summary>
+            Gets all notifications of a given user
+            </summary>
+            <param name="userId">The id of the user</param>
+            <returns>List of notifications</returns>
+        </member>
+        <member name="M:Microservice.Controllers.NotificationsController.GetAllMine">
+            <summary>
+            Gets all notifications of the current user
+            </summary>
+            <returns>List of notifications</returns>
+        </member>
+        <member name="M:Microservice.Controllers.NotificationsController.GetMineById(System.String)">
+            <summary>
+            Gets a given notification of the current user
+            </summary>
+            <param name="id">Id of the notification</param>
+            <returns>The user notification</returns>
+        </member>
+        <member name="M:Microservice.Controllers.NotificationsController.MarkAllMineAsViewed">
+            <summary>
+            Marks as viewed all notifications of the current user
+            </summary>
+            <returns>List of marked notifications</returns>
+        </member>
+        <member name="M:Microservice.Controllers.NotificationsController.MarkMineAsViewedById(System.String)">
+            <summary>
+            Marks as viewed a given notification of the current user
+            </summary>
+            <param name="id">Id of the notification</param>
+            <returns>The marked notification</returns>
+        </member>
+        <member name="M:Microservice.Controllers.NotificationsController.ClearAllMineViewed">
+            <summary>
+            Clears all viewed all notifications of the current user
+            </summary>
+            <returns>List of cleared notifications</returns>
+        </member>
+        <member name="M:Microservice.Controllers.NotificationsController.WebPushSubscribeAsync(Microservice.ViewModels.WebPushEndpointVM)">
+            <summary>
+            Registers a webpush notification subscription endpoint for the current user
+            </summary>
+            <param name="subscriptionEndpoint">The webpush notification endpoint subscription data to register</param>
+            <returns>The subscription registered</returns>
+        </member>
+        <member name="M:Microservice.Controllers.NotificationsController.WebPushUnsubscribeAsync(System.String)">
+            <summary>
+            Unregisters a webpush notification subscription endpoint for the current user
+            </summary>
+            <param name="deviceId">Id of the device registered for webpush notification</param>
+            <returns>The subscription unregistered</returns>
+        </member>
+        <member name="M:Microservice.Controllers.NotificationsController.GetUserIdById(System.String)">
+            <summary>
+            Gets basic user info of the notification
+            </summary>
+            <param name="id">Id of the notification</param>
+            <returns>User basic info</returns>
+        </member>
+        <member name="M:Microservice.Controllers.NotificationsController.GetStatusTypes">
+            <summary>
+            Gets notification types
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microservice.Controllers.NotificationsController.TestWebPushSend(Liquid.Platform.NotificationVM)">
+            <summary>
+            Test method to send webpushs
+            </summary>
+            <param name="notifVM">Notification content</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microservice.Controllers.NotificationsController.TestEmailSend(Liquid.Platform.EmailMSG)">
+            <summary>
+            Test method to send emails
+            </summary>
+            <param name="emailMessage">Email content</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microservice.Controllers.NotificationsController.TestSendNotification(Liquid.Platform.NotificationVM)">
+            <summary>
+            Test method to send emails
+            </summary>
+            <param name="notifVM">Notification content</param>
+            <returns></returns>
+        </member>
+        <member name="T:Microservice.Models.WebPushEndpoint">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Microservice.Models.WebPushEndpoint.DeviceId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Microservice.Models.WebPushEndpoint.PushEndpoint">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Microservice.Models.WebPushEndpoint.PushP256DH">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Microservice.Models.WebPushEndpoint.PushAuth">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Microservice.Models.WebPushEndpoint.Validate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Microservice.Services.ConfigService">
+            <summary>
+            Manages the notification configuration for each user
+            </summary>
+        </member>
+        <member name="T:Microservice.Services.NotificationService">
+            <summary>
+            Sends contextual notifications thought user´s available channels
+            </summary>
+        </member>
+        <member name="T:Microservice.ViewModels.BasicUserInfoVM">
+            <summary>
+            A user's configuration profile with its exposable attributes
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.BasicUserInfoVM.Id">
+            <summary>
+            User's id
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.BasicUserInfoVM.Name">
+            <summary>
+            User´s name 
+            </summary>
+        </member>
+        <member name="M:Microservice.ViewModels.BasicUserInfoVM.Validate">
+            <summary>
+            Language selected by the user
+            </summary>
+        </member>
+        <member name="T:Microservice.ViewModels.ConfigVM">
+            <summary>
+            A user's configuration profile with its exposable attributes
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.ConfigVM.Id">
+            <summary>
+            User's id
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.ConfigVM.Name">
+            <summary>
+            User´s name 
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.ConfigVM.Language">
+            <summary>
+            Language selected by the user
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.ConfigVM.TimeZone">
+            <summary>
+            Timezone selected by the user
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.ConfigVM.Email">
+            <summary>
+            The user's email
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.ConfigVM.EmailIsValid">
+            <summary>
+            Indicates whether the email has been validated
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.ConfigVM.Phone">
+            <summary>
+            The user's phone
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.ConfigVM.PhoneIsValid">
+            <summary>
+            Indicates whether the phone has been validated
+            </summary>
+        </member>
+        <member name="T:Microservice.ViewModels.HistoryVM">
+            <summary>
+            A notification history
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.HistoryVM.Id">
+            <summary>
+            Notification's id
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.HistoryVM.ShortMessage">
+            <summary>
+            Short message to be promptly shown to user
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.HistoryVM.LongMessage">
+            <summary>
+            Long message to be shown to user as further detail
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.HistoryVM.SentAt">
+            <summary>
+            DataTime at which the notification was sent
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.HistoryVM.ViewedAt">
+            <summary>
+            DataTime at which the notification was viewed by the user
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.HistoryVM.EmailSent">
+            <summary>
+            Indication whether an reinforment by email was sent
+            </summary>
+        </member>
+        <member name="T:Microservice.ViewModels.WebPushEndpointVM">
+            <summary>
+            A user's profile with its editable attributes
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebPushEndpointVM.DeviceId">
+            <summary>
+            The id of the device
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebPushEndpointVM.PushEndpoint">
+            <summary>
+            The web endpoint for doing a push
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebPushEndpointVM.PushP256DH">
+            <summary>
+            The P256DH key
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.WebPushEndpointVM.PushAuth">
+            <summary>
+            The WebPush authorization token
+            </summary>
+        </member>
+    </members>
+</doc>

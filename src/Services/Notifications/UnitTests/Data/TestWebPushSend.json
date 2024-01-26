@@ -1,0 +1,24 @@
+{
+  "notiWebPushSend01": {
+    "input": {
+      "payload": {
+        "userId": "0fe1ddfa-a5fd-4749-9ec2-538134344986",
+        "type": "tasks",
+        "ShortMessage": "TEST_NOTIFICATION_01 - Short Message",
+        "LongMessage": "TEST_NOTIFICATION_01 - Long Message ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ",
+        "contextUri": "contexto"
+      }
+    }
+  },
+  "notiWebPushSendUserNoContent": {
+    "input": {
+      "payload": {
+        "userId": "00000000-0000-0000-0000-000000000000",
+        "type": "tasks",
+        "ShortMessage": "TEST_NOTIFICATION_01 - Short Message",
+        "LongMessage": "TEST_NOTIFICATION_01 - Long Message ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ",
+        "contextUri": "contexto"
+      }
+    }
+  }
+}

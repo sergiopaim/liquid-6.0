@@ -1,0 +1,26 @@
+{
+  "notiNotificationSend": {
+    "input": {
+      "id": "6c6947b1-7470-457a-8746-3b790ae1819b",
+      "commandType": "send",
+      "userId": "3aa9455a-ec1c-4178-8bfa-97d8891f1856",
+      "type": "tasks",
+      "shortMessage": "Unit Test Async Notification",
+      "longMessage": "This is a message sent while Unit Testing the call to the SendNotification ASYNC API of the Notification microservice",
+      "contextUri": "tasks/1d1c5663-8d78-439e-9b6c-333679135e5a",
+      "sentAt": "{{NOW}}"
+    }
+  },
+  "notiNotificationRegister": {
+    "input": {
+      "id": "034a9c0d-4474-4d64-be0c-362955c3ad09",
+      "commandType": "register",
+      "userId": "3aa9455a-ec1c-4178-8bfa-97d8891f1856",
+      "type": "tasks",
+      "shortMessage": "Unit Test Async Notification",
+      "longMessage": "This is a message sent while Unit Testing the call to the RegisterNotification ASYNC API of the Notification microservice",
+      "contextUri": "tasks/1d1c5663-8d78-439e-9b6c-333679135e5a",
+      "sentAt": "{{NOW}}"
+    }
+  }
+}

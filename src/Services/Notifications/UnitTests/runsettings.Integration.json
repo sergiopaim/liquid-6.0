@@ -1,0 +1,8 @@
+{
+  "ApiWrapper": {
+    "NOTIFICATIONS": {
+      "Host": "https://dev-api.your-domain.com/int/user/notifications",
+      "Port": -1
+    }
+  }
+}

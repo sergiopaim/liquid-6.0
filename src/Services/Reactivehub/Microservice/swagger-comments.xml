@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microservice</name>
+    </assembly>
+    <members>
+        <member name="T:Microservice.Controllers.ReactiveHubController">
+            <summary>
+            API with its endpoints and exchanged datatypes
+            </summary>
+        </member>
+        <member name="M:Microservice.Controllers.ReactiveHubController.Notify(Liquid.Platform.NotificationVM)">
+            <summary>
+            Send notification to user
+            </summary>
+            <param name="notification">Notification contents</param>
+            <returns></returns>
+        </member>
+        <member name="T:Microservice.Events.DomainEV">
+            <summary>
+            Reactive event to notify application logic of domain events
+            </summary>
+        </member>
+        <member name="P:Microservice.Events.DomainEV.Name">
+            <summary>
+            User´s name 
+            </summary>
+        </member>
+        <member name="P:Microservice.Events.DomainEV.Payload">
+            <summary>
+            Generic payload object
+            </summary>
+        </member>
+        <member name="P:Microservice.Events.DomainEV.ShortMessage">
+            <summary>
+            Short message for user notification
+            </summary>
+        </member>
+        <member name="T:Microservice.Events.NotificationEV">
+            <summary>
+            Reactive Event indicating that a notification was sent to the user
+            </summary>
+        </member>
+        <member name="P:Microservice.Events.NotificationEV.Id">
+            <summary>
+            Notification's id
+            </summary>
+        </member>
+        <member name="P:Microservice.Events.NotificationEV.UserId">
+            <summary>
+            User's id
+            </summary>
+        </member>
+        <member name="P:Microservice.Events.NotificationEV.Type">
+            <summary>
+            Type of notification
+            </summary>
+        </member>
+        <member name="P:Microservice.Events.NotificationEV.ShortMessage">
+            <summary>
+            Short message to be promptly shown to user
+            </summary>
+        </member>
+        <member name="P:Microservice.Events.NotificationEV.LongMessage">
+            <summary>
+            Long message to be shown to user as further detail
+            </summary>
+        </member>
+        <member name="P:Microservice.Events.NotificationEV.ContextUri">
+            <summary>
+            Relative URI to solve/open the notification
+            </summary>
+        </member>
+        <member name="P:Microservice.Events.NotificationEV.SentAt">
+            <summary>
+            DataTime at which the notification was sent
+            </summary>
+        </member>
+        <member name="P:Microservice.Events.NotificationEV.ViewedAt">
+            <summary>
+            DataTime at which the notification was viewed by the user
+            </summary>
+        </member>
+        <member name="T:Microservice.Events.UserSessionEV">
+            <summary>
+            Reactive Event indicating that a notification was sent to the user
+            </summary>
+        </member>
+        <member name="P:Microservice.Events.UserSessionEV.SessionId">
+            <summary>
+            User's session id
+            </summary>
+        </member>
+        <member name="P:Microservice.Events.UserSessionEV.UIEvent">
+            <summary>
+            Type of UI Event
+            </summary>
+        </member>
+        <member name="P:Microservice.Events.UserSessionEV.Context">
+            <summary>
+            Event context
+            </summary>
+        </member>
+        <member name="M:Microservice.Events.UserSessionEV.Validate">
+            <summary>
+            Short message to be promptly shown to user
+            </summary>
+        </member>
+        <member name="T:Microservice.ViewModels.ConnectionVM">
+            <summary>
+            A user's profile with its editable attributes
+            </summary>
+        </member>
+        <member name="P:Microservice.ViewModels.ConnectionVM.UserId">
+            <summary>
+            User's id
+            </summary>
+        </member>
+    </members>
+</doc>

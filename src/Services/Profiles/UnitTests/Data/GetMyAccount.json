@@ -1,0 +1,12 @@
+{
+  "profGetMyAccount01": {
+    "input": {
+      "role": "user1"
+    },
+    "output": {
+      "payload": {
+        "id": "6c5f063d-22f7-4635-9849-02ea54d9b9cc"
+      }
+    }
+  }
+}

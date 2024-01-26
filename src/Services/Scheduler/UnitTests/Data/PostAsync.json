@@ -1,0 +1,30 @@
+{
+  "repPost01": {
+    "input": {
+      "checklistId": "pesquisaPerfil",
+      "answers": {
+        "gostoMusical": [
+          "sertanejo",
+          "pop",
+          "classica"
+        ],
+        "frequenciaComoTurista": "anualmente",
+        "sobreMim": "I would rather not."
+      }
+    },
+    "output": {
+      "payload": {
+        "checklistId": "pesquisaPerfil",
+        "answers": {
+          "gostoMusical": [
+            "sertanejo",
+            "pop",
+            "classica"
+          ],
+          "frequenciaComoTurista": "anualmente",
+          "sobreMim": "I would rather not."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microservice</name>
+    </assembly>
+    <members>
+        <member name="T:Microservice.Controllers.SchedulerController">
+            <summary>
+            API with its endpoints and exchangeable datatypes
+            </summary>
+        </member>
+        <member name="M:Microservice.Controllers.SchedulerController.ListAllJobs">
+            <summary>
+            Lists the status of all jobs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microservice.Controllers.SchedulerController.GetAllJobs">
+            <summary>
+            Gets information of all jobs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microservice.Controllers.SchedulerController.GetByMicroservice(System.String)">
+            <summary>
+            Gets information of the jobs run by a microservice
+            </summary>
+            <param name="microservice">The name of the microservice</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microservice.Controllers.SchedulerController.GetJob(System.String,System.String)">
+            <summary>
+            Gets job information
+            </summary>
+            <param name="microservice">The name of the microservice that runs the job</param>
+            <param name="jobName">The name of the job</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microservice.Controllers.SchedulerController.ReactivateJob(System.String,System.String)">
+            <summary>
+            Recativates a job
+            </summary>
+            <param name="microservice">The name of the microservice that runs the job</param>
+            <param name="jobName">The name of the job</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microservice.Controllers.SchedulerController.AbortJob(System.String,System.String)">
+            <summary>
+            Aborts a job
+            </summary>
+            <param name="microservice">The name of the microservice that runs the job</param>
+            <param name="jobName">The name of the job</param>
+            <returns></returns>
+        </member>
+        <member name="T:Microservice.ViewModels.ScheduleVM">
+            <summary>
+            An report with all of its attributes
+            </summary>
+        </member>
+        <member name="M:Microservice.ViewModels.ScheduleVM.Validate">
+            <summary>
+            Validates the ViewModel
+            </summary>
+        </member>
+    </members>
+</doc>

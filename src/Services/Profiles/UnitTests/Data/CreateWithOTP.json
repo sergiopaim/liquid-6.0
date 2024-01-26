@@ -1,0 +1,42 @@
+{
+  "profCreateWithOTP_Success_New": {
+    "input": {
+      "id": "ed99b3e0-100b-4c65-bb67-fc0db7e20ffd",
+      "name": "Ana Beatriz Oliveira",
+      "email": "biaoliveira3@members.com",
+      "phone": "+55 (99) 99993-1116"
+    },
+    "output": {
+      "payload": {
+        "id": "ed99b3e0-100b-4c65-bb67-fc0db7e20ffd",
+        "name": "Ana Beatriz Oliveira",
+        "email": "biaoliveira3@members.com",
+        "phone": "+55 (99) 99993-1116",
+        "accountId": "ed99b3e0-100b-4c65-bb67-fc0db7e20ffd",
+        "otp": "EJyHaebzXt+/NOgT9BnrWC4/rLkJKiNrBNM9dIs/DBI=",
+        "otpExpiration": "2020-03-25T19:36:33.5670369Z"
+      },
+      "command": "create"
+    }
+  },
+  "profCreateWithOTP_Success_Update": {
+    "input": {
+      "id": "a0c2c0df-f6b4-4fc4-a83a-e0f5f3609185",
+      "name": "Maria das Graças Antunes",
+      "email": "mgantunes@members.com",
+      "phone": "+55 (99) 98889-1111"
+    },
+    "output": {
+      "payload": {
+        "id": "a0c2c0df-f6b4-4fc4-a83a-e0f5f3609185",
+        "name": "Maria das Graças Antunes",
+        "email": "mgantunes@members.com",
+        "phone": "+55 (99) 98889-1111",
+        "accountId": "a0c2c0df-f6b4-4fc4-a83a-e0f5f3609185",
+        "otp": "EJyHaebzXt+/NOgT9BnrWC4/rLkJKiNrBNM9dIs/DBI=",
+        "otpExpiration": "2020-03-25T19:36:33.5670369Z"
+      },
+      "command": null
+    }
+  }
+}

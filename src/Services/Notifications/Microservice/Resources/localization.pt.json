@@ -1,0 +1,19 @@
+{
+  // Services
+  "FAILED_SENDING_EMAIL_THRU_AWS_SES": "Falha ao enviar email através do AWS SES.",
+  "NOTIFICATION_TYPE_NOT_OPTED_IN": "Tipo de notificação não optado pelo usuário.",
+  "USER_CONFIG_NOT_FOUND": "Configurações do usuário não encontradas.",
+  "DEVICE_NOT_FOUND": "Dispositivo não encontrado.",
+  "PHONE_NUMBER_IS_NULL_WARN": "Número de celular para o id de usuário '{0}' está vazio. A mensagem SMS não pôde ser enviada!",
+  "EMAIL_ADDRESS_IS_NULL_WARN": "Endereço de e-mail para o id de usuário '{0}' está vazio. A mensagem de e-mail não pôde ser enviada!",
+  "TEXT_CAPTURED": "SMS para {0} CAPTURADO",
+  "NOTIFICATION_OF_OTHER_USER": "Esta notificação é para {0}",
+  // Messages
+  "PROFILE_DELETION_EMAIL_SUBJECT": "Sua conta foi excluída",
+  "PROFILE_DELETION_EMAIL_MESSAGE": "Sua solicitação de exclusão de conta e de dados pessoais foi atendida.\n\nPara saber mais sobre que dados excluímos e quais precisamos manter, visita a nossa página de política de desligamento: {0}",
+  // Email parts
+  "NO-REPLY_EMAIL_ADDRESS": "sem-resposta@your-domain.com",
+  "CLICK_TO_SEE_HTML_LINK": "Clique para abrir &raquo;",
+  "WE_HAVE_GOT_A_NEW_MESSAGE": "Temos uma nova mensagem para você: \n\n",
+  "DID_YOU_SEE_THE_NOTIFICATION": "Você viu a notificação que enviamos na aplicação há alguns minutos? \n\n"
+}

@@ -1,0 +1,97 @@
+[
+  // GetById and MarkAsViewedById
+  {
+    "id": "c1d17649-4a01-41e9-b12f-2e56e403e8a7",
+    "userId": "3aa9455a-ec1c-4178-8bfa-97d8891f1856",
+    "type": "tasks",
+    "shortMessage": "Your are the next in line?",
+    "contextUri": "tasks/1d1c5663-8d78-439e-9b6c-333679135e5a",
+    "sentAt": "2024-01-17T13:55:51.1780245Z",
+    "viewedAt": "{{MIN_DATETIME}}"
+  },
+  // GetAllByUser and MarkAllAsViewedByUser
+  {
+    "id": "f14193d2-1d63-4a84-8982-027898c99ac5",
+    "userId": "d084740b-9593-4727-be8d-bb5f1f716921",
+    "type": "tasks",
+    "shortMessage": "Your are the next in line?",
+    "contextUri": "tasks/1d1c5663-8d78-439e-9b6c-333679135e5a",
+    "sentAt": "2024-01-17T13:55:51.1780245Z",
+    "viewedAt": "{{MIN_DATETIME}}"
+  },
+  {
+    "id": "24aaad27-4cb1-46e1-ac28-14994ea52539",
+    "userId": "d084740b-9593-4727-be8d-bb5f1f716921",
+    "type": "tasks",
+    "shortMessage": "REMEMBER: Your payment is due today!",
+    "contextUri": "tasks/1d1c5663-8d78-439e-9b6c-333679135e5a",
+    "sentAt": "2024-01-17T13:51:54.0150965Z",
+    "viewedAt": "{{MIN_DATETIME}}"
+  },
+  {
+    "id": "784e86d1-96f3-4e7c-b77a-2c4d307a0ef3",
+    "userId": "d084740b-9593-4727-be8d-bb5f1f716921",
+    "type": "tasks",
+    "shortMessage": "REMEMBER: Your payment is due today!",
+    "contextUri": "tasks/1d1c5663-8d78-439e-9b6c-333679135e5a",
+    "cleared": true,
+    "sentAt": "2024-01-17T13:51:54.0150965Z",
+    "viewedAt": "{{MIN_DATETIME}}"
+  },
+  // ClearAllViewedByUser"
+  {
+    "id": "accc3674-c930-494a-a29a-7d8f6ddce8ff",
+    "userId": "5e179f25-8d4d-43e9-b358-5320e740329f",
+    "type": "tasks",
+    "shortMessage": "Your are the next in line?",
+    "contextUri": "tasks/1d1c5663-8d78-439e-9b6c-333679135e5a",
+    "sentAt": "2024-01-17T13:55:51.1780245Z",
+    "viewedAt": "{{MIN_DATETIME}}"
+  },
+  {
+    "id": "86717749-a9e5-44ba-b547-d943d1d6e745",
+    "userId": "5e179f25-8d4d-43e9-b358-5320e740329f",
+    "type": "tasks",
+    "shortMessage": "Your are the next in line?",
+    "contextUri": "tasks/1d1c5663-8d78-439e-9b6c-333679135e5a",
+    "sentAt": "2024-01-17T13:55:51.1780245Z",
+    "viewedAt": "{{MIN_DATETIME}}"
+  },
+  {
+    "id": "98540a18-1414-444b-b46a-a83c6140342a",
+    "userId": "5e179f25-8d4d-43e9-b358-5320e740329f",
+    "type": "tasks",
+    "shortMessage": "REMEMBER: Your payment is due today!",
+    "contextUri": "tasks/1d1c5663-8d78-439e-9b6c-333679135e5a",
+    "sentAt": "2024-01-17T13:51:54.0150965Z",
+    "viewedAt": "{{NOW-65}}"
+  },
+  // Used in deleteMe
+  {
+    "id": "accc3674-c930-494a-a29a-7d8f6ddce8ff",
+    "userId": "bf2dddfa-aa21-4b67-99ba-8125d4bfa109",
+    "type": "tasks",
+    "shortMessage": "Your are the next in line?",
+    "contextUri": "tasks/1d1c5663-8d78-439e-9b6c-333679135e5a",
+    "sentAt": "2024-01-17T13:55:51.1780245Z",
+    "viewedAt": "{{MIN_DATETIME}}"
+  },
+  {
+    "id": "86717749-a9e5-44ba-b547-d943d1d6e745",
+    "userId": "bf2dddfa-aa21-4b67-99ba-8125d4bfa109",
+    "type": "tasks",
+    "shortMessage": "Your are the next in line?",
+    "contextUri": "tasks/1d1c5663-8d78-439e-9b6c-333679135e5a",
+    "sentAt": "2024-01-17T13:55:51.1780245Z",
+    "viewedAt": "{{MIN_DATETIME}}"
+  },
+  {
+    "id": "98540a18-1414-444b-b46a-a83c6140342a",
+    "userId": "bf2dddfa-aa21-4b67-99ba-8125d4bfa109",
+    "type": "tasks",
+    "shortMessage": "REMEMBER: Your payment is due today!",
+    "contextUri": "tasks/1d1c5663-8d78-439e-9b6c-333679135e5a",
+    "sentAt": "2024-01-17T13:51:54.0150965Z",
+    "viewedAt": "{{NOW-65}}"
+  }
+]

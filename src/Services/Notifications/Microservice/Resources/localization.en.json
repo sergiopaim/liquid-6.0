@@ -1,0 +1,19 @@
+{
+  // Services
+  "FAILED_SENDING_EMAIL_THRU_AWS_SES": "Failed to send email through AWS SES.",
+  "NOTIFICATION_TYPE_NOT_OPTED_IN": "Notification type not opted in by user.",
+  "USER_CONFIG_NOT_FOUND": "User config not found.",
+  "DEVICE_NOT_FOUND": "Device not found.",
+  "PHONE_NUMBER_IS_NULL_WARN": "Phone number of userId '{0}' is empty. No text message was sent!",
+  "EMAIL_ADDRESS_IS_NULL_WARN": "E-mail address of userId '{0}' is empty. No e-mail message was sent!",
+  "TEXT_CAPTURED": "TEXT to {0} CAPTURED",
+  "NOTIFICATION_OF_OTHER_USER": "This notification is for {0}",
+  // Messages
+  "PROFILE_DELETION_EMAIL_SUBJECT": "Your account was deleted",
+  "PROFILE_DELETION_EMAIL_MESSAGE": "Your request for deletion of account and personal data has been fulfilled.\n\nTo learn more about what data we delete and what we need to keep, visit our shutdown policy page: {0}",
+  // Email parts
+  "NO-REPLY_EMAIL_ADDRESS": "no-reply@your-domain.com",
+  "CLICK_TO_SEE_HTML_LINK": "Click to open &raquo;",
+  "WE_HAVE_GOT_A_NEW_MESSAGE": "We have got a new message for you: \n\n",
+  "DID_YOU_SEE_THE_NOTIFICATION": "Did you see the notification we sent thru the app a few minutes ago? \n\n"
+}

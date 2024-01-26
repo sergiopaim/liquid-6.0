@@ -1,0 +1,244 @@
+// Comments can be added using double slashes at the start of a line, ignoring whitespace.
+[
+  // Used in unit tests `userGetByEmail01`, `userGetMe01`, `userGetMyAccount01`, and `userPutMe01` and userPutById
+  {
+    "id": "3e9c7183-6bd8-4a54-ad23-8bb7dc788df2",
+    "name": "João de Deus",
+    "language": "pt",
+    "timeZone": "America/Sao_Paulo",
+    "channels": {
+      "email": "jdedeus@members.com",
+      "emailIsValid": true,
+      "emailToChange": "jdedeus3@members.com",
+      "lastValidEmail": "jdedeus@members.com",
+      "emailOTP": "49437",
+      "phone": "",
+      "phoneIsValid": false,
+      "phoneToChange": "+55 (99) 99697-8956",
+      "oldPhone": "+55 (99) 99997-8956",
+      "phoneOTP": "54783",
+      "initiated": false,
+      "revertOTP": "98821"
+    },
+    "uiPreferences": {},
+    "accounts": [
+      {
+        "id": "3e9c7183-6bd8-4a54-ad23-8bb7dc788df2",
+        "source": "iM",
+        "roles": [
+          "member"
+        ],
+        "credentials": {
+          "otp": "vTeYbN",
+          "otpExpiresAt": "{{NOW+120}}",
+          "webAuthN": [],
+          "webAuthNChallenge": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "c4e221c1-f445-41bf-b624-29a518a41c94",
+    "name": "João dos Santos",
+    "language": "pt",
+    "timeZone": "America/Sao_Paulo",
+    "channels": {
+      "email": "jsantos@members.com",
+      "emailIsValid": true,
+      "emailToChange": "jsantos3@members.com",
+      "lastValidEmail": "jsantos@members.com",
+      "emailOTP": "49437",
+      "phone": "+55 (99) 99998-8956",
+      "phoneIsValid": false,
+      "phoneToChange": "+55 (99) 99698-1956",
+      "oldPhone": "+55 (99) 99998-1956",
+      "phoneOTP": "54783",
+      "initiated": false,
+      "revertOTP": "98821",
+      "reversableUntil": "{{NOW+100}}"
+    },
+    "uiPreferences": {},
+    "accounts": [
+      {
+        "id": "c4e221c1-f445-41bf-b624-29a518a41c94",
+        "source": "iM",
+        "roles": [
+          "member"
+        ],
+        "credentials": {
+          "otp": "vTeYbN",
+          "otpExpiresAt": "{{NOW+120}}",
+          "webAuthN": [],
+          "webAuthNChallenge": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "6c5f063d-22f7-4635-9849-02ea54d9b9cc",
+    "name": "João da Silva",
+    "language": "en",
+    "timeZone": "America/Los_Angeles",
+    "channels": {
+      "email": "jsilva@members.com",
+      "emailIsValid": true,
+      "phone": "+55 (99) 99999-8956",
+      "phoneIsValid": true
+    },
+    "accounts": [
+      {
+        "id": "6c5f063d-22f7-4635-9849-02ea54d9b9cc",
+        "source": "iM",
+        "roles": [
+          "member"
+        ],
+        "credentials": {
+          "otp": "vTeYbN",
+          "otpExpiresAt": "{{NOW+120}}",
+          "webAuthN": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "5e179f25-8d4d-43e9-b358-5320e740329f",
+    "name": "Lucas Eduardo Chaves",
+    "language": "en",
+    "timeZone": "America/Los_Angeles",
+    "channels": {
+      "email": "lucaseduardo@members.com",
+      "phone": "+55 (99) 99999-1111"
+    },
+    "accounts": [
+      {
+        "id": "5e179f25-8d4d-43e9-b358-5320e740329f",
+        "source": "iM",
+        "roles": [
+          "member"
+        ],
+        "credentials": {
+          "otp": "vTeYbN",
+          "otpExpiresAt": "{{NOW+120}}",
+          "webAuthN": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "4291148f-63f3-4c98-b4a2-495133eb5022",
+    "name": "Admin (General)",
+    "language": "pt",
+    "timeZone": "America/Sao_Paulo",
+    "uiPreferences": null,
+    "channels": {
+      "email": "admin.backoffice@your-dev-domain.onmicrosoft.com",
+      "emailIsValid": true,
+      "phone": null
+    },
+    "accounts": [
+      {
+        "source": "aAD",
+        "roles": [
+          "generalAdmin"
+        ],
+        "credentials": {
+          "otp": null,
+          "otpExpiresAt": "{{MIN_DATETIME}}",
+          "webAuthN": null,
+          "webAuthNChallenge": null
+        },
+        "id": "4291148f-63f3-4c98-b4a2-495133eb5022"
+      }
+    ]
+  },
+  {
+    "id": "96629580-1d3a-411d-8111-14d9052b5c3e",
+    "name": "Ana Beatriz Oliveira",
+    "email": "biaoliveira@members.com",
+    "phone": "+55 (99) 99999-1116",
+    "language": "pt",
+    "timeZone": "America/Sao_Paulo",
+    "channels": {
+      "email": "biaoliveira@members.com",
+      "emailIsValid": true,
+      "phone": "+55 (99) 99999-1116",
+      "phoneIsValid": true
+    },
+    "accounts": [
+      {
+        "source": "iM",
+        "roles": [
+          "member"
+        ],
+        "credentials": {
+          "otp": "vTeYbN",
+          "otpExpiresAt": "{{NOW+120}}",
+          "webAuthN": []
+        },
+        "id": "96629580-1d3a-411d-8111-14d9052b5c3e"
+      }
+    ]
+  },
+  // Used in profCreateWithOTP_Success_Update
+  {
+    "id": "a0c2c0df-f6b4-4fc4-a83a-e0f5f3609185",
+    "name": "Maria das Graças Antunes",
+    "language": "en",
+    "timeZone": "America/Los_Angeles",
+    "channels": {
+      "email": "mgantunes@members.com",
+      "phone": "+55 (99) 98889-1111"
+    },
+    "accounts": [
+      {
+        "id": "a0c2c0df-f6b4-4fc4-a83a-e0f5f3609185",
+        "source": "iM",
+        "roles": [
+          "member"
+        ],
+        "credentials": {
+          "otp": "vTeYbN",
+          "otpExpiresAt": "{{NOW+120}}",
+          "webAuthN": []
+        }
+      }
+    ]
+  },
+  // Used in deleteMe
+  {
+    "id": "bf2dddfa-aa21-4b67-99ba-8125d4bfa109",
+    "name": "Para deletar",
+    "language": "pt",
+    "timeZone": "America/Sao_Paulo",
+    "channels": {
+      "email": "jtodelete@members.com",
+      "emailIsValid": true,
+      "emailToChange": "",
+      "lastValidEmail": "",
+      "emailOTP": "",
+      "phone": "+55 (99) 99698-8957",
+      "phoneIsValid": true,
+      "phoneToChange": "",
+      "oldPhone": "",
+      "phoneOTP": "",
+      "initiated": false,
+      "revertOTP": ""
+    },
+    "uiPreferences": {},
+    "accounts": [
+      {
+        "id": "bf2dddfa-aa21-4b67-99ba-8125d4bfa109",
+        "source": "iM",
+        "roles": [
+          "member"
+        ],
+        "credentials": {
+          "otp": "vTeYbN",
+          "otpExpiresAt": "{{NOW+120}}",
+          "webAuthN": [],
+          "webAuthNChallenge": null
+        }
+      }
+    ]
+  }
+]

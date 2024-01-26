@@ -1,0 +1,8 @@
+{
+  "ApiWrapper": {
+    "REPORTS": {
+      "Host": "https://dev-api.your-domain.com/int/domain/core/reports",
+      "Port": -1
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "notiNotificationSend": {
+    "input": {
+      "userId": "3aa9455a-ec1c-4178-8bfa-97d8891f1856",
+      "type": "tasks",
+      "shortMessage": "Unit Test Notification",
+      "longMessage": "This is a message sent while Unit Testing the call to the SendNotification ASYNC API of the Reactivehub microservice",
+      "contextUri": "tasks/1d1c5663-8d78-439e-9b6c-333679135e5a",
+      "SentAt": "{{NOW}}"
+    },
+    "output": {
+      "payload": {
+        "command": "send"
+      }
+    }
+  },
+  "notiNotificationRegister": {
+    "input": {
+      "userId": "0886a4d0-5918-49f3-9cf6-86fe67c85fe6",
+      "type": "tasks",
+      "shortMessage": "Unit Test Notification",
+      "longMessage": "This is a message sent while Unit Testing the call to the SendNotification ASYNC API of the Reactivehub microservice",
+      "contextUri": "tasks/1d1c5663-8d78-439e-9b6c-333679135e5a",
+      "SentAt": "{{NOW}}"
+    },
+    "output": {
+      "payload": {
+        "command": "register"
+      }
+    }
+  }
+}

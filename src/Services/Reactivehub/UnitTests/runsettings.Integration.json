@@ -1,0 +1,8 @@
+{
+  "ApiWrapper": {
+    "NOTIFICATIONS": {
+      "Host": "https://dev-api.your-domain.com/int/runtime/reactivehub",
+      "Port": -1
+    }
+  }
+}

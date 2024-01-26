@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <DisableImplicitAspNetCoreAnalyzers>true</DisableImplicitAspNetCoreAnalyzers>
+    <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
+
+    <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
+    <PackageId>LiquidApplication.Activation</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <TargetFramework>net6.0</TargetFramework>
+    <Version>6.0.0</Version>
+    <Copyright>Avanade Inc.</Copyright>
+    <Description>Base types for exposing business funcionality of Liquid Microservices to frontends and other microservices.</Description>
+    <Product>Liquid - Modern Application Framework</Product>
+    <Company>Avanade Inc.</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\net6.0\</OutputPath>
+    <DocumentationFile>bin\Debug\net6.0\Liquid.Activation.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="6.0.5" />
+    <PackageReference Include="NCrontab" Version="3.3.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Liquid.Base\Liquid.Base.csproj" />
+    <ProjectReference Include="..\Liquid.Domain\Liquid.Domain.csproj" />
+  </ItemGroup>
+</Project> 

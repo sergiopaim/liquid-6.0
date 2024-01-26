@@ -1,0 +1,8 @@
+{
+  "ApiWrapper": {
+    "NOTIFICATIONS": {
+      "Host": "https://localhost",
+      "Port": 5004
+    }
+  }
+}

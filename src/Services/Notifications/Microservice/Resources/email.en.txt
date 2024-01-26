@@ -1,0 +1,15 @@
+
+Hello{userGreeting}!
+
+{message}
+
+
+
+DEV Team
+your-domain.com
+
+-------------------------------------------------------------------------------
+This is an automated message intended exclusively for {userName}.
+
+If you are not such person, please disregard it.
+No response needed or possible.

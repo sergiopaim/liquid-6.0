@@ -1,0 +1,36 @@
+{
+  "notiDeleteWebSubscription01": {
+    "input": {
+      "userId": "d084740b-9593-4727-be8d-bb5f1f716921",
+      "deviceId": "edge-01"
+    },
+    "output": {
+      "payload": {
+        "deviceId": "edge-01",
+        "pushEndpoint": "https://bn3p.notify.windows.com/w/?token=BQYAAADX3w6RGSTRaE01quuH3LmNc6Lx55gY7B2Mqn%2fQ0pvE9hM9ST0dbx77JF7nj4NV2YT7IWIcpYfjxuXavBqwE6D1AOFCMYDC0%2fQCTdmrTRcXyNff%2b110ACPNJbRQR8G%2bFlLOkvqxNFIOL4dERyTsghBNCgMYcoI3py8xwm3vWKD8iiTykNXey5Hud4OagyE6EycXP4rEDepc%2fovmSKtDrzJ4cKBeLsh%2bmL%2bF8AIkbLnqjWVHdRSsxbsKXHmWgC8UN3NKCeobIzoQ8ABNrYxq0eYebRIdSwfPrIdfkMkT40fpGzQE%2fmrNKQOVBBWcpXeX%2bFY0gwDDfwE%2bwjfLXsdKhAYs",
+        "pushP256DH": "BFfja20fy7WSRHh6ponJi6tIZbAfl8h0AKT6sfj3+Asxozd2ScoMHbj/uww+j4j3CkWsHw53MFliEqZ70lAjg5k=",
+        "pushAuth": "mcZnKBSZ7Vkb7G+zZqxpTg=="
+      }
+    }
+  },
+  "notiDeleteWebSubscription02": {
+    "input": {
+      "userId": "d084740b-9593-4727-be8d-bb5f1f716921",
+      "deviceId": "chrome-03"
+    },
+    "output": {
+      "payload": {
+        "deviceId": "chrome-03",
+        "pushEndpoint": "https://bn3p.notify.windows.com/w/?token=BQYAAABpR65dFqcfroreCF%2fypTtjj7GaKk5QuD8OJyvuatgfspUGeYhnJVm1VT67K4VQwLSR3ankzKZKZzywIzm5cbg4YLHecmboxm39APlXFD8rr%2bNZuddHNyrj0jW1A3FdcKopxLEPp0UlmWxcmulnqMgqUs6hAA7qHZGDd1eBP6b%2bsvKl1A5uVVt57yGHgtIMxn5I%2bbLDUu9fiH6B4tdt1rjssZkl%2fUJd7gHijPjR4mUqZIHLjqojRMdlTN%2b49OOC1n29MVN%2bHmnm378ma%2fRZEBwPEnY5L17nWm7rOyhuCcZx%2fiIm8ZZJnxQFWPFti6OAPio74v7o%2fX46BIzNpqsvK6Sp",
+        "pushP256DH": "BFjXNk/OTTJbAF63CisjzRmqWed4pbpIauN2m+hLXU1xBnPhg64x0YPeW6dGeCv+LihT1GZqBl40r0FO0oBXhE8=",
+        "pushAuth": "zlmHExLtkCcpT2urgkXiEw=="
+      }
+    }
+  },
+  "notiDeleteWebSubscriptionChannelNoContent": {
+    "input": {
+      "userId": "d084740b-9593-4727-be8d-bb5f1f716921",
+      "deviceId": "dispositivo-inexistente"
+    }
+  }
+}

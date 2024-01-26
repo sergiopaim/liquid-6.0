@@ -1,0 +1,10 @@
+{
+  "notiTextMessageSend": {
+    "input": {
+      "commandType": "send",
+      "userId": "3aa9455a-ec1c-4178-8bfa-97d8891f1856",
+      "type": "account",
+      "message": "This is a text test.\n\nContextual link would come as here: {MemberAppURL}/about?parm=someParm"
+    }
+  }
+}

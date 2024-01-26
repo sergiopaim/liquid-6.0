@@ -1,0 +1,32 @@
+{
+  "userPutById": {
+    "input": {
+      "id": "6c5f063d-22f7-4635-9849-02ea54d9b9cc",
+      "payload": {
+        "name": "João da Silva UPDATED",
+        "email": "jsilva@members.com",
+        "phone": "+55 (99) 99999-8956",
+        "language": "pt",
+        "timeZone": "America/Sao_Paulo"
+      }
+    },
+    "output": {
+      "payload": {
+        "id": "6c5f063d-22f7-4635-9849-02ea54d9b9cc",
+        "name": "João da Silva UPDATED",
+        "language": "pt",
+        "timeZone": "America/Sao_Paulo"
+      }
+    }
+  },
+  "profPutByIdNoContent": {
+    "input": {
+      "id": "NON-EXISTING-ID",
+      "payload": {
+        "name": "João da Silva",
+        "email": "jsilva@members.com",
+        "phone": "+55 (99) 99999-8956"
+      }
+    }
+  }
+}

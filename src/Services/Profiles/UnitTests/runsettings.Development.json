@@ -1,0 +1,8 @@
+{
+  "ApiWrapper": {
+    "PROFILES": {
+      "Host": "https://localhost",
+      "Port": 5001
+    }
+  }
+}

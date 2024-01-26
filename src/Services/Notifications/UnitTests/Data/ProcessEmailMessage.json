@@ -1,0 +1,11 @@
+{
+  "notiEmailMessageSend": {
+    "input": {
+      "commandType": "send",
+      "userId": "3aa9455a-ec1c-4178-8bfa-97d8891f1856",
+      "type": "account",
+      "subject": "Unit Test Async Mail Message",
+      "message": "This is a message sent while Unit Testing the call to the SendMail ASYNC API of the Notification microservice.\n\nSome contextual link would come as here: {MemberAppURL}/about?parm=someParm"
+    }
+  }
+}

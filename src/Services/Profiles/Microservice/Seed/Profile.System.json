@@ -1,0 +1,30 @@
+// Comments can be added using double slashes at the start of a line, ignoring whitespace.
+[
+  {
+    "id": "4291148f-63f3-4c98-b4a2-495133eb5022",
+    "name": "Admin (General)",
+    "language": "pt",
+    "timeZone": "America/Sao_Paulo",
+    "uiPreferences": null,
+    "channels": {
+      "email": "admin.backoffice@your-dev-domain.onmicrosoft.com",
+      "emailIsValid": true,
+      "phone": null
+    },
+    "accounts": [
+      {
+        "source": "aAD",
+        "roles": [
+          "generalAdmin"
+        ],
+        "credentials": {
+          "otp": null,
+          "otpExpiresAt": "{{MIN_DATETIME}}",
+          "webAuthN": null,
+          "webAuthNChallenge": null
+        },
+        "id": "4291148f-63f3-4c98-b4a2-495133eb5022"
+      }
+    ]
+  }
+]

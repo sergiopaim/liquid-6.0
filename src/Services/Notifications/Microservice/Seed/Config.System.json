@@ -1,0 +1,164 @@
+// Comments can be added using double slashes at the start of a line, ignoring whitespace.
+[
+  {
+    "id": "7130f34a-6c2d-48e4-8f78-854ef3c5a5ca",
+    "name": "Diego Paulino",
+    "language": "pt",
+    "webPushChannel": {
+      "notificationTypes": [ "tasks" ],
+      "endpoints": []
+    },
+    "emailChannel": {
+      "notificationTypes": [ "tasks" ],
+      "email": "diego.paulino@members.com",
+      "isValid": true
+    },
+    "phoneChannel": {
+      "phone": "+55 (99) 98889-0003",
+      "isValid": false,
+      "notificationTypes": [
+        "account",
+        "tasks",
+        "marketing"
+      ]
+    }
+  },
+  {
+    "id": "4d672c9d-9ee0-4fde-96ff-3aea15d38327",
+    "name": "Caio Ferraz",
+    "language": "pt",
+    "webPushChannel": {
+      "notificationTypes": [ "tasks" ],
+      "endpoints": []
+    },
+    "emailChannel": {
+      "notificationTypes": [ "tasks" ],
+      "email": "caio.ferraz@members.com",
+      "isValid": false
+    },
+    "phoneChannel": {
+      "phone": "+55 (99) 98889-0002",
+      "isValid": false,
+      "notificationTypes": [
+        "account",
+        "tasks",
+        "marketing"
+      ]
+    }
+  },
+  {
+    "id": "b03e6965-89ee-448f-8956-f91e26fc0241",
+    "name": "Guilherme Paiva",
+    "language": "pt",
+    "webPushChannel": {
+      "notificationTypes": [ "tasks" ],
+      "endpoints": []
+    },
+    "emailChannel": {
+      "notificationTypes": [ "tasks" ],
+      "email": "guilherme.paiva@members.com",
+      "isValid": true
+    },
+    "phoneChannel": {
+      "phone": "+55 (99) 98889-0005",
+      "isValid": false,
+      "notificationTypes": [
+        "account",
+        "tasks",
+        "marketing"
+      ]
+    }
+  },
+  {
+    "id": "f433490d-c504-47d1-ae33-c90b80bd63c4",
+    "name": "Júlia Ruiz",
+    "language": "pt",
+    "webPushChannel": {
+      "notificationTypes": [ "tasks" ],
+      "endpoints": []
+    },
+    "emailChannel": {
+      "notificationTypes": [ "tasks" ],
+      "email": "julia.ruiz@members.com",
+      "isValid": false
+    },
+    "phoneChannel": {
+      "phone": "+55 (99) 98889-0006",
+      "isValid": false,
+      "notificationTypes": [
+        "account",
+        "tasks",
+        "marketing"
+      ]
+    }
+  },
+  {
+    "id": "620b660f-2494-4f64-952a-3394ea24610f",
+    "name": "Miguel Augusto",
+    "language": "pt",
+    "webPushChannel": {
+      "notificationTypes": [ "tasks" ],
+      "endpoints": []
+    },
+    "emailChannel": {
+      "notificationTypes": [ "tasks" ],
+      "email": "miguel.augusto@members.com",
+      "isValid": false
+    },
+    "phoneChannel": {
+      "phone": "+55 (99) 98889-0007",
+      "isValid": false,
+      "notificationTypes": [
+        "account",
+        "tasks",
+        "marketing"
+      ]
+    }
+  },
+  {
+    "id": "48584c1b-a5de-4380-8833-1db12aebfce2",
+    "name": "Renato Leal",
+    "language": "pt",
+    "webPushChannel": {
+      "notificationTypes": [ "tasks" ],
+      "endpoints": []
+    },
+    "emailChannel": {
+      "notificationTypes": [ "tasks" ],
+      "email": "renato.leal@members.com",
+      "isValid": true
+    },
+    "phoneChannel": {
+      "phone": "+55 (99) 98889-0009",
+      "isValid": false,
+      "notificationTypes": [
+        "account",
+        "tasks",
+        "marketing"
+      ]
+    }
+  },
+  {
+    "id": "dad862ef-14ac-47a3-8015-472bf98f9cd5",
+    "name": "Paula Cardoso",
+    "language": "pt",
+    "webPushChannel": {
+      "notificationTypes": [ "tasks" ],
+      "endpoints": []
+    },
+    "emailChannel": {
+      "notificationTypes": [ "tasks" ],
+      "email": "paula.cardoso@members.com",
+      "isValid": true
+    },
+    "phoneChannel": {
+      "phone": "+55 (99) 98889-0008",
+      "isValid": false,
+      "notificationTypes": [
+        "account",
+        "tasks",
+        "marketing"
+      ]
+    }
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "profGetByEmail01": {
+    "input": {
+      "email": "jsilva@members.com"
+    },
+    "output": {
+      "payload": {
+        "id": "6c5f063d-22f7-4635-9849-02ea54d9b9cc"
+      }
+    }
+  },
+  "profGetByEmailNoContent": {
+    "input": {
+      "email": "email@notfound.com"
+    }
+  }
+}

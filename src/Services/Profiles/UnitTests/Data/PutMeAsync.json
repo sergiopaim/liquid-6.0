@@ -1,0 +1,145 @@
+{
+  "profPutMeMember": {
+    "input": {
+      "role": "user1",
+      "payload": {
+        "name": "João da Silva",
+        "email": "jsilva@members.com",
+        "phone": "+55 (99) 99999-8956",
+        "language": "pt",
+        "timeZone": "America/Sao_Paulo"
+      }
+    },
+    "output": {
+      "payload": {
+        "id": "6c5f063d-22f7-4635-9849-02ea54d9b9cc",
+        "language": "pt",
+        "timeZone": "America/Sao_Paulo"
+      }
+    }
+  },
+  "profPutMeBOAdmin": {
+    "input": {
+      "role": "generalAdmin",
+      "payload": {
+        "name": "Admin (General)",
+        "language": "en",
+        "timeZone": "America/Los_Angeles",
+        "email": "admin.backoffice@your-dev-domain.onmicrosoft.com"
+      }
+    },
+    "output": {
+      "payload": {
+        "id": "4291148f-63f3-4c98-b4a2-495133eb5022",
+        "name": "Admin (General)",
+        "language": "en",
+        "timeZone": "America/Los_Angeles"
+      }
+    }
+  },
+  "EmailConflict": {
+    "input": {
+      "role": "user1",
+      "payload": {
+        "name": "João da Silva",
+        "email": "lucaseduardo@members.com",
+        "phone": "+55 (99) 99999-8956",
+        "language": "pt",
+        "timeZone": "America/Sao_Paulo"
+      }
+    },
+    "output": {
+      "payload": {
+        "id": "6c5f063d-22f7-4635-9849-02ea54d9b9cc",
+        "language": "pt",
+        "timeZone": "America/Sao_Paulo"
+      }
+    }
+  },
+  "PhoneConflict": {
+    "input": {
+      "role": "user1",
+      "payload": {
+        "name": "João da Silva",
+        "email": "jsilva@members.com",
+        "phone": "+55 (99) 99999-1111",
+        "language": "pt",
+        "timeZone": "America/Sao_Paulo"
+      }
+    },
+    "output": {
+      "payload": {
+        "id": "6c5f063d-22f7-4635-9849-02ea54d9b9cc",
+        "language": "pt",
+        "timeZone": "America/Sao_Paulo"
+      }
+    }
+  },
+  "EmailToBeValidated": {
+    "input": {
+      "role": "user1",
+      "payload": {
+        "name": "João da Silva",
+        "email": "jsilva2@members.com",
+        "phone": "+55 (99) 99999-8956",
+        "language": "pt",
+        "timeZone": "America/Sao_Paulo"
+      }
+    },
+    "output": {
+      "payload": {
+        "id": "6c5f063d-22f7-4635-9849-02ea54d9b9cc",
+        "email": "jsilva2@members.com",
+        "phone": "+55 (99) 99999-8956"
+      }
+    }
+  },
+  "PhoneToBeValidated": {
+    "input": {
+      "role": "user1",
+      "payload": {
+        "name": "João da Silva",
+        "email": "jsilva@members.com",
+        "phone": "+55 (99) 99991-8956",
+        "language": "pt",
+        "timeZone": "America/Sao_Paulo"
+      }
+    },
+    "output": {
+      "payload": {
+        "id": "6c5f063d-22f7-4635-9849-02ea54d9b9cc",
+        "email": "jsilva@members.com",
+        "phone": "+55 (99) 99991-8956"
+      }
+    }
+  },
+  "EmailAndPhoneToBeValidated": {
+    "input": {
+      "role": "user1",
+      "payload": {
+        "name": "João da Silva",
+        "email": "jsilva3@members.com",
+        "phone": "+55 (99) 99699-8956",
+        "language": "pt",
+        "timeZone": "America/Sao_Paulo"
+      }
+    },
+    "output": {
+      "payload": {
+        "id": "6c5f063d-22f7-4635-9849-02ea54d9b9cc",
+        "email": "jsilva3@members.com",
+        "phone": "+55 (99) 99699-8956"
+      }
+    }
+  },
+  "profPutMeNoContent": {
+    "input": {
+      "role": "UnknownUser",
+      "payload": {
+        "name": "João da Silva",
+        "email": "jsilva@members.com",
+        "phone": "+55 (99) 99999-8956"
+      }
+    }
+  }
+}

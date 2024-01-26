@@ -1,0 +1,11 @@
+{
+  // Messages to send
+  "MESSAGE_MUST_NOT_BE_EMPTY": "O campo 'message' não pode estar vazio.",
+  "SUBJECT_MUST_NOT_BE_EMPTY": "O campo 'subject' não pode estar vazio.",
+  // Services
+  "USER_NOT_FOUND": "Usuário não encontrado.",
+  // LightEnums
+  "NOTIFICATIONTYPE_ACCOUNT": "Conta",
+  "NOTIFICATIONTYPE_TASKS": "Tarefas",
+  "NOTIFICATIONTYPE_MARKETING": "Marketing"
+}

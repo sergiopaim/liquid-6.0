@@ -1,0 +1,95 @@
+// Comments can be added using double slashes at the start of a line, ignoring whitespace.
+[
+  {
+    "id": "a564c180-2345-4ac4-954e-5ac831101e90",
+    "name": "Eduardo Siqueira Oliveira",
+    "language": "pt",
+    "webPushChannel": {
+      "notificationTypes": [ "tasks" ],
+      "endpoints": []
+    },
+    "emailChannel": {
+      "notificationTypes": [ "tasks" ],
+      "email": "edusiqueira@members.com",
+      "isValid": false
+    },
+    "phoneChannel": {
+      "phone": "+55 (99) 99999-3567",
+      "isValid": false,
+      "notificationTypes": [
+        "account",
+        "tasks",
+        "marketing"
+      ]
+    }
+  },
+  {
+    "id": "71bf1489-fa02-4216-a309-a608920a2c85",
+    "name": "Eduardo Alves Borges",
+    "language": "pt",
+    "webPushChannel": {
+      "notificationTypes": [ "tasks" ],
+      "endpoints": []
+    },
+    "emailChannel": {
+      "notificationTypes": [ "tasks" ],
+      "email": "alveseduardo@members.com",
+      "isValid": false
+    },
+    "phoneChannel": {
+      "phone": "+55 (99) 99999-8746",
+      "isValid": false,
+      "notificationTypes": [
+        "account",
+        "tasks",
+        "marketing"
+      ]
+    }
+  },
+  {
+    "id": "48584c1b-a5de-4380-8833-1db12aebfce2",
+    "name": "Renato Leal",
+    "language": "pt",
+    "webPushChannel": {
+      "notificationTypes": [ "tasks" ],
+      "endpoints": []
+    },
+    "emailChannel": {
+      "notificationTypes": [ "tasks" ],
+      "email": "renato.leal@members.com",
+      "isValid": true
+    },
+    "phoneChannel": {
+      "phone": "+55 (99) 98889-0009",
+      "isValid": false,
+      "notificationTypes": [
+        "account",
+        "tasks",
+        "marketing"
+      ]
+    }
+  },
+  {
+    "id": "d59a9116-393b-4283-822f-fb4445e338c5",
+    "name": "Ramona Flowers",
+    "language": "pt",
+    "webPushChannel": {
+      "notificationTypes": [ "tasks" ],
+      "endpoints": []
+    },
+    "emailChannel": {
+      "notificationTypes": [ "tasks" ],
+      "email": "ramona.flowers@members.com",
+      "isValid": true
+    },
+    "phoneChannel": {
+      "phone": "+55 (99) 98983-0010",
+      "isValid": false,
+      "notificationTypes": [
+        "account",
+        "tasks",
+        "marketing"
+      ]
+    }
+  }
+]

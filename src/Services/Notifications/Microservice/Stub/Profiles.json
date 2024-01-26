@@ -1,0 +1,44 @@
+[
+  {
+    "call": {
+      "request": {
+        "method": "GET",
+        "suffix": "6a12c3fc-1173-4eb8-a5c6-dc42546958c8",
+        "userId": "{{*}}"
+      },
+      "response": {
+        "payload": {
+          "id": "6a12c3fc-1173-4eb8-a5c6-dc42546958c8",
+          "name": "Jessica Beatriz Silva",
+          "email": "jessicasilva@members.com",
+          "language": "en",
+          "phone": "+55 (99) 99999-8956",
+          "otp": "vTeYbN"
+        },
+        "critics": []
+      },
+      "statusCode": 200
+    }
+  },
+  {
+    "call": {
+      "request": {
+        "method": "GET",
+        "suffix": "00000000-0000-0000-0000-000000000000",
+        "userId": "{{*}}"
+      },
+      "response": {
+        "payload": {
+          "id": "6a12c3fc-1173-4eb8-a5c6-dc42546958c8",
+          "name": "Jessica Beatriz Silva",
+          "email": "jessicasilva@members.com",
+          "language": "en",
+          "phone": "+55 (99) 99999-8956",
+          "otp": "vTeYbN"
+        },
+        "critics": []
+      },
+      "statusCode": 200
+    }
+  }
+]

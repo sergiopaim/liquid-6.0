@@ -1,0 +1,37 @@
+{
+  "notiUserMessageCreate": {
+    "input": {
+      "commandType": "create",
+      "id": "5e179f25-8d4d-43e9-b358-5320e740329f",
+      "name": "Lucas Eduardo Chaves",
+      "email": "lucaseduardo@members.com",
+      "emailIsValid": false,
+      "language": "pt",
+      "phone": "+55 (99) 99999-1111"
+    }
+  },
+  "notiUserMessageUpdate": {
+    "input": {
+      "commandType": "update",
+      "id": "3aa9455a-ec1c-4178-8bfa-97d8891f1856",
+      "name": "João da Silva",
+      "email": "joao@members.com",
+      "emailIsValid": true,
+      "language": "en",
+      "phone": "+55 (99) 99999-1111"
+    }
+  },
+  "notiUserMessageDelete": {
+    "input": {
+      "commandType": "delete",
+      "id": "bf2dddfa-aa21-4b67-99ba-8125d4bfa109",
+      "name": "Para deletar",
+      "language": "pt",
+      "timeZone": "America/Sao_Paulo",
+      "email": "jtodelete@members.com",
+      "emailIsValid": true,
+      "phone": "+55 (99) 99698-8957",
+      "phoneIsValid": true
+    }
+  }
+}

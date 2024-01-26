@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<DisableImplicitAspNetCoreAnalyzers>true</DisableImplicitAspNetCoreAnalyzers>
+		<RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
+
+		<RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
+		<PackageId>LiquidApplication.Platform</PackageId>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<TargetFramework>net6.0</TargetFramework>
+		<Version>6.0.0</Version>
+		<Authors>Avanade Brazil Architect Team - Gustavo Denis; Leonardo Machado; Andersson Pinheiro; Paulo Araujo</Authors>
+		<Company>Avanade Inc.</Company>
+		<Description>Liquid cartridge for abstraction of the use of Liquid Platform microservice APIs.</Description>
+		<Product>Liquid - Modern Application Framework</Product>
+		<Copyright>Avanade Inc.</Copyright>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DebugType>full</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+		<OutputPath>bin\Debug\net6.0\</OutputPath>
+		<DocumentationFile>bin\Debug\net6.0\Liquid.Platform.xml</DocumentationFile>
+	</PropertyGroup>
+	<ItemGroup>
+	  <EmbeddedResource Include="appsettings.Demonstration.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="appsettings.Development.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="appsettings.Integration.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="appsettings.Production.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="appsettings.Quality.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="TimeZoneConverter" Version="5.0.0" />
+	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Liquid.Activation\Liquid.Activation.csproj" />
+    <ProjectReference Include="..\Liquid.Domain\Liquid.Domain.csproj" />
+    <ProjectReference Include="..\Liquid.Middleware\Liquid.Middleware.csproj" />
+    <ProjectReference Include="..\Liquid.OnAzure\Liquid.OnAzure.csproj" />
+    <ProjectReference Include="..\Liquid.Repository\Liquid.Repository.csproj" />
+    <ProjectReference Include="..\Liquid.Runtime\Liquid.Runtime.csproj" />
+  </ItemGroup>
+
+</Project>
